@@ -1,0 +1,19 @@
+.menu {
+	padding-top: 43px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	&__list {
+		display: flex;
+		gap: 100px;
+	}
+	&__link {
+		color: black;
+		font-size: 25px;
+	}
+}
+
+.cart {
+	display: flex;
+	gap: 53px;
+}

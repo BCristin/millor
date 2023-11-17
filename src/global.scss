@@ -1,0 +1,13 @@
+@import 'reset';
+@import 'assets/fonts/fonts';
+body {
+	font-family: 'Gilroy', sans-serif;
+	font-weight: 500;
+	color: #000;
+}
+
+.container {
+	width: 1690px;
+	margin: 0 auto;
+	padding: 0 15px;
+}

@@ -1,0 +1,23 @@
+.title {
+	margin-top: 171px;
+	margin-bottom: 60px;
+	font-size: 80px;
+	font-weight: 900;
+}
+.text {
+	max-width: 658px;
+	font-size: 25px;
+	line-height: 130%; /* 32.5px */
+	margin-bottom: 90px;
+	span {
+		font-weight: 700;
+	}
+}
+.inner {
+	position: relative;
+}
+.img {
+	position: absolute;
+	top: -105px;
+	right: 89px;
+}
