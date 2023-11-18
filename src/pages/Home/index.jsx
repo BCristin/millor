@@ -9,10 +9,10 @@ export const index = () => {
 export const Home = () => {
 	return (
 		<>
+			<Menu></Menu>
 			<header className={styles.header}>
 				<div className="container">
 					<div className={styles.header__inner}>
-						<Menu></Menu>
 						<HeaderSlider></HeaderSlider>
 						<svg
 							className={styles.decor}
