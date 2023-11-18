@@ -1,0 +1,20 @@
+@import '../../var';
+.header {
+	min-height: 965px;
+	// background-image: url('../../assets/decor/yellow.svg');
+	// background-repeat: no-repeat;
+	// background-position: right -736px top -319px;
+
+	&__inner {
+		position: relative;
+	}
+}
+.decor {
+	position: absolute;
+	top: -340px;
+	right: -827px;
+	z-index: -1;
+	path {
+		fill: $main-color;
+	}
+}

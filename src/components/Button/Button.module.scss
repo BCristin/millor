@@ -1,0 +1,19 @@
+@import '../../var';
+.btn {
+	border-radius: 5px;
+	background-color: $main-color;
+	color: #fff;
+	font-size: 30px;
+	font-weight: 700;
+	padding: 22px 56px;
+	border: none;
+	&:hover {
+		background: #e2a300;
+	}
+}
+.small {
+	width: 100%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 25px;
+}

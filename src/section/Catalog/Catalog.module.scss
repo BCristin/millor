@@ -1,0 +1,30 @@
+@import '../../var';
+
+.catalog {
+	position: relative;
+	&::after {
+		content: url('../../assets/images/catalog/beans.png');
+		position: absolute;
+		height: 674px;
+		width: 674px;
+		top: 500px;
+		left: -446px;
+	}
+}
+.title {
+	margin-bottom: 60px;
+}
+.cards {
+	display: flex;
+	gap: 20px;
+	justify-content: space-between;
+}
+.decor {
+	position: absolute;
+	top: -52px;
+	left: -944px;
+	z-index: -1;
+	path {
+		fill: $main-color;
+	}
+}
