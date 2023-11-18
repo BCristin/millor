@@ -29,7 +29,9 @@ export const Menu = () => {
 			})}>
 			<div className="container">
 				<nav className={styles.nav}>
-					<img src={logo} alt="logo" className={styles.logo} styles={'fill="red"'} />
+					<a href="#!">
+						<img src={logo} alt="logo" className={styles.logo} />
+					</a>
 					<ul className={cn(styles.nav__list, { [styles.invisible]: visibleInput })}>
 						<li>
 							<a className={styles.nav__link} href="#!">
