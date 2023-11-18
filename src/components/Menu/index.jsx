@@ -24,8 +24,7 @@ export const Menu = () => {
 	return (
 		<div
 			className={cn(styles.menu, {
-				[styles.menu__search]: visibleInput,
-				[styles.menu__search]: !isAtTop,
+				[styles.menu__search]: visibleInput || !isAtTop,
 			})}>
 			<div className="container">
 				<nav className={styles.nav}>
