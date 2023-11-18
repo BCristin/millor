@@ -1,19 +1,44 @@
+@import '../../var';
 .menu {
 	padding-top: 43px;
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-end;
+	align-items: center;
 	&__list {
 		display: flex;
 		gap: 100px;
+		align-self: flex-end;
 	}
 	&__link {
 		color: black;
 		font-size: 25px;
+		display: inline-block;
+		border-bottom: 3px solid transparent;
+		padding-bottom: 4px;
+		&:hover {
+			border-bottom: 3px solid $main-color;
+		}
 	}
 }
 
 .cart {
 	display: flex;
 	gap: 53px;
+	// align-self: center;
+}
+.input__inner {
+	display: none; // width: 100%;
+	flex-grow: 1;
+	position: relative;
+}
+
+.svg {
+	// display: none;
+}
+
+.visible {
+	display: block;
+}
+.invisible {
+	display: none;
 }

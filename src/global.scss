@@ -1,9 +1,12 @@
 @import 'reset';
 @import 'assets/fonts/fonts';
+@import 'var';
+
 body {
 	font-family: 'Gilroy', sans-serif;
 	font-weight: 500;
 	color: #000;
+	overflow-x: hidden;
 }
 
 .container {
