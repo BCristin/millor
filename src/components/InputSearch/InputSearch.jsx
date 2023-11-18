@@ -1,8 +1,11 @@
+import cn from 'classnames';
+import { useState } from 'react';
 import styles from './InputSearch.module.scss';
 
 export const InputSearch = ({ setVisibleInput }) => {
+	const [result, setResult] = useState('nofind');
 	return (
-		<>
+		<div className={styles.search} onMouseLeave={() => setVisibleInput(false)}>
 			<svg
 				className={styles.icon__search}
 				xmlns="http://www.w3.org/2000/svg"
@@ -19,13 +22,27 @@ export const InputSearch = ({ setVisibleInput }) => {
 				/>
 			</svg>
 			<input
-				className={styles.input}
-				onMouseLeave={() => setVisibleInput(false)}
+				className={cn(styles.input, { [styles.input__result]: result !== 0 })}
+				onChange={(e) => setResult(e.target.value.length)}
 				type="search"
 				name=""
 				id=""
 				placeholder="Поиск по товарам"
 			/>
-		</>
+			{result > 0 && (
+				<div className={styles.result}>
+					<div className={styles.result__item}>Ячменный напиток Millor - Здоровое питание</div>{' '}
+					<div className={styles.result__item}>Ячменный напиток Millor - Здоровое питание</div>{' '}
+					<div className={styles.result__item}>Ячменный напиток Millor - Здоровое питание</div>{' '}
+					<div className={styles.result__item}>Ячменный напиток Millor - Здоровое питание</div>{' '}
+					<div className={styles.result__item}>Ячменный напиток Millor - Здоровое питание</div>
+				</div>
+			)}
+			{result === 'nofind' && (
+				<div className={styles.result}>
+					<div className={styles.result__nofind}>Ничего не найдено</div>
+				</div>
+			)}
+		</div>
 	);
 };
