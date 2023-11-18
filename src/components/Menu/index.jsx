@@ -28,12 +28,12 @@ export const Menu = () => {
 			})}>
 			<div className="container">
 				<nav className={styles.nav}>
-					<a href="#!">
+					<a href="#root">
 						<img src={logo} alt="logo" className={styles.logo} />
 					</a>
 					<ul className={cn(styles.nav__list, { [styles.invisible]: visibleInput })}>
 						<li>
-							<a className={styles.nav__link} href="#!">
+							<a className={styles.nav__link} href="#catalog">
 								Каталог товаров
 							</a>
 						</li>

@@ -1,11 +1,16 @@
 @import 'reset';
 @import 'assets/fonts/fonts';
 @import 'var';
-body,
-html,
-#root {
+body {
+	height: 100%;
+	scroll-behavior: smooth;
+}
+html {
 	height: 100%;
 }
+// #root {
+// 	height: 100%;
+// }
 body {
 	font-family: 'Gilroy', sans-serif;
 	font-weight: 500;
@@ -22,4 +27,8 @@ body {
 	width: 1690px;
 	margin: 0 auto;
 	padding: 0 15px;
+}
+
+section {
+	scroll-margin-top: 170px;
 }

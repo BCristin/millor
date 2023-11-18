@@ -1,0 +1,16 @@
+.discount {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 50px;
+}
+.text {
+	color: #000;
+	text-align: right;
+	font-family: Gilroy;
+	font-size: 25px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 130%; /* 32.5px */
+	max-width: 1107px;
+}

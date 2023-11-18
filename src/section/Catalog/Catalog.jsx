@@ -8,7 +8,7 @@ import { Title } from '../../components/Title/Title';
 import styles from './Catalog.module.scss';
 export const Catalog = () => {
 	return (
-		<section className={styles.catalog}>
+		<section className={styles.catalog} id="catalog">
 			<Title className={styles.title}>Каталоги нашей продукции</Title>
 			<div className={styles.cards}>
 				<Card img={coffeeBeans} title={'Здоровое питание'}></Card>

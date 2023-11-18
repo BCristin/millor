@@ -2,6 +2,7 @@ import { Footer } from '../../components/Footer/Footer.jsx';
 import { HeaderSlider } from '../../components/HeaderSlider/index.jsx';
 import { Menu } from '../../components/Menu/index.jsx';
 import { Catalog } from '../../section/Catalog/Catalog.jsx';
+import { Discount } from '../../section/Discount/Discount.jsx';
 import styles from './Home.module.scss';
 
 export const index = () => {
@@ -12,7 +13,7 @@ export const Home = () => {
 	return (
 		<>
 			<Menu></Menu>
-			<header className={styles.header}>
+			<header className={styles.header} id="top">
 				<div className="container">
 					<div className={styles.header__inner}>
 						<HeaderSlider></HeaderSlider>
@@ -36,6 +37,7 @@ export const Home = () => {
 			<main className="main">
 				<div className="container">
 					<Catalog></Catalog>
+					<Discount></Discount>
 				</div>
 			</main>
 			<footer className="footer">
