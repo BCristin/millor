@@ -1,3 +1,4 @@
+import { Footer } from '../../components/Footer/Footer.jsx';
 import { HeaderSlider } from '../../components/HeaderSlider/index.jsx';
 import { Menu } from '../../components/Menu/index.jsx';
 import styles from './Home.module.scss';
@@ -31,9 +32,53 @@ export const Home = () => {
 					</div>
 				</div>
 			</header>
-			<main className="main"></main>
+			<main className="main">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores illum harum et deleniti.
+				Quis, odit. A suscipit porro, delectus repudiandae natus aliquam autem quibusdam alias
+				praesentium adipisci harum debitis iste possimus, velit facere qui nostrum sapiente expedita
+				magni voluptatibus rem at earum accusantium. Voluptates labore incidunt quibusdam
+				exercitationem at corrupti, molestiae aliquam ipsa repellat expedita maiores ea qui dolore
+				rerum, rem beatae dolor dignissimos officia veniam ratione eius! Aperiam neque, soluta
+				accusamus deleniti laborum dolor perferendis quod quibusdam quo explicabo, ab ipsa officiis
+				deserunt similique praesentium provident! Alias, architecto. Quibusdam, quasi eius nostrum
+				nihil possimus labore esse! Tempore, iure quo. Explicabo vitae dicta pariatur saepe fugiat
+				exercitationem ab quae laudantium, possimus non illo, et, harum molestias deserunt
+				doloremque cum maiores quis? Nostrum eius id, quod nisi culpa consectetur ad explicabo
+				voluptatum repudiandae doloribus labore beatae perspiciatis velit a harum nobis, molestias,
+				soluta sapiente corrupti dolor iusto natus. Minima consequatur est consequuntur animi esse
+				quam deleniti unde iste? Mollitia iusto minus obcaecati aliquam, dolore at neque iste unde
+				quo corporis aperiam deleniti nihil, cupiditate voluptate incidunt, deserunt inventore
+				asperiores maxime nulla? Quis, explicabo. Quis incidunt rerum, voluptatum, nisi voluptates
+				quaerat nostrum mollitia molestiae dignissimos unde eveniet saepe totam doloremque non
+				nobis, amet nulla. Ducimus alias pariatur magnam sed dolores, placeat hic modi ea sunt
+				voluptatem asperiores dolorum tempora assumenda velit? Doloremque sit fuga facilis minima
+				totam magni nostrum expedita, et dolorum enim excepturi, omnis eaque, iusto voluptates
+				deleniti explicabo architecto iure mollitia. Eveniet rerum vero voluptatum recusandae
+				doloribus nostrum placeat obcaecati tempora eligendi molestias, vel facere quas beatae dolor
+				similique voluptates culpa atque numquam, alias qui. Voluptas unde esse nemo nisi
+				voluptatibus pariatur officiis iusto, culpa suscipit nulla rerum tenetur excepturi sequi
+				animi obcaecati ipsam id voluptatum commodi autem ad nesciunt! Impedit unde quibusdam
+				necessitatibus reiciendis quisquam accusantium modi accusamus aspernatur, corrupti natus?
+				Consectetur nisi nam est blanditiis voluptates aut nemo ipsa! Consequatur minus repellat
+				recusandae ut, distinctio repellendus soluta, quod ipsa nulla mollitia laboriosam dolores
+				voluptatum quae quibusdam at architecto praesentium porro voluptatem voluptate magni. Quidem
+				obcaecati expedita magnam ut eum vero dolorem facere ipsa quis dignissimos, saepe autem unde
+				quas blanditiis tempora inventore laborum quia nihil consectetur consequuntur explicabo?
+				Saepe reiciendis modi nulla. Magnam veniam aut harum illum explicabo, quo cumque sapiente
+				quae. Dolorem rerum cumque excepturi eaque saepe quisquam sit architecto placeat soluta.
+				Quisquam reprehenderit unde doloremque ea sit asperiores perspiciatis vitae aliquam sunt
+				inventore quia accusantium tenetur quis, consectetur iusto, eos hic, eum commodi rerum quos
+				dolor sint qui. Enim maxime ipsa repellat dolorem aliquam, aliquid alias accusamus
+				consequuntur, soluta in veniam non? Nisi, cumque voluptate dicta illo quo pariatur enim
+				omnis, debitis veritatis, non eveniet sunt. Maxime distinctio, quidem eligendi iste cum
+				aspernatur sit maiores, temporibus quaerat dicta possimus debitis in nesciunt illum eum
+				provident, similique numquam fugit quam quisquam. Molestiae tempore vero culpa, dignissimos
+				praesentium magni veniam natus aspernatur soluta neque inventore. Nostrum, beatae architecto
+				voluptatum sapiente veritatis blanditiis reiciendis sit similique enim laboriosam ab quae
+				inventore ex explicabo excepturi hic adipisci! Eum, iure beatae.
+			</main>
 			<footer className="footer">
-				<div className="container"></div>
+				<Footer></Footer>
 			</footer>
 		</>
 	);
