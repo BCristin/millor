@@ -1,6 +1,7 @@
 import { Footer } from '../../components/Footer/Footer.jsx';
 import { HeaderSlider } from '../../components/HeaderSlider/index.jsx';
 import { Menu } from '../../components/Menu/index.jsx';
+import { Benefits } from '../../section/Benefits/Benefits.jsx';
 import { Catalog } from '../../section/Catalog/Catalog.jsx';
 import { Discount } from '../../section/Discount/Discount.jsx';
 import styles from './Home.module.scss';
@@ -39,6 +40,7 @@ export const Home = () => {
 					<Catalog></Catalog>
 					<Discount></Discount>
 				</div>
+				<Benefits></Benefits>
 			</main>
 			<footer className="footer">
 				<Footer></Footer>
