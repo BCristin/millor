@@ -1,6 +1,6 @@
 @import '../../var';
 .header {
-	min-height: 965px;
+	// min-height: 965px;
 	// background-image: url('../../assets/decor/yellow.svg');
 	// background-repeat: no-repeat;
 	// background-position: right -736px top -319px;
@@ -11,8 +11,8 @@
 }
 .decor {
 	position: absolute;
-	top: -340px;
-	right: -827px;
+	top: -438px;
+	right: -865px;
 	z-index: -1;
 	path {
 		fill: $main-color;

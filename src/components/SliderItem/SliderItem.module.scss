@@ -1,5 +1,6 @@
 .title {
 	margin-bottom: 60px;
+	margin-left: 2px;
 	font-size: 80px;
 	font-weight: 900;
 }
@@ -13,14 +14,14 @@
 	}
 }
 .slider__item {
-	min-height: 850px;
+	min-height: 733px;
 	padding-top: 116px;
 	position: relative;
 }
 .img {
 	position: absolute;
 	top: 28px;
-	right: 89px;
+	right: 64px;
 }
 :global {
 	.swiper {

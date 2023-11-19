@@ -8,22 +8,24 @@
 		position: absolute;
 		height: 674px;
 		width: 674px;
-		top: 500px;
-		left: -446px;
+		top: 520px;
+		left: -452px;
 	}
 }
 .title {
-	margin-bottom: 60px;
+	margin-bottom: 83px;
+	margin-left: 8px;
 }
 .cards {
 	display: flex;
+
 	gap: 20px;
 	justify-content: space-between;
 }
 .decor {
 	position: absolute;
-	top: -52px;
-	left: -944px;
+	top: 6px;
+	left: -891px;
 	z-index: -1;
 	path {
 		fill: $main-color;
