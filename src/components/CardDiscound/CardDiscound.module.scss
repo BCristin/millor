@@ -1,0 +1,131 @@
+@import '../../var';
+.inner {
+	margin-top: 35px;
+	margin: 35px 15px 20px;
+}
+.card {
+	padding: 0px 38px 50px;
+	border-radius: 20px;
+	background: #fff;
+	box-shadow: 0px 0px 20px 0px rgba(146, 146, 146, 0.25);
+	padding: 25px 37px 50px;
+}
+.circle {
+	width: 70px;
+	height: 70px;
+	background-color: $main-color;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 35px;
+	font-weight: 700;
+	margin-top: -60px;
+}
+.card__top {
+	display: flex;
+	justify-content: space-between;
+	&_inner {
+		display: flex;
+		flex-direction: column;
+		gap: 17px;
+	}
+}
+.discound {
+	color: #f9b300;
+	font-size: 18px;
+	font-weight: 700;
+}
+.selector {
+	border-radius: 5px;
+	border: 1px solid #f9b300;
+	background: #fff7e1;
+	width: 132px;
+	height: 33px;
+	outline: none;
+	color: #000;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 500;
+	// appearance: none;
+}
+
+.stats {
+	display: flex;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	gap: 20px;
+	img {
+		width: 172px;
+		height: 311px;
+	}
+	.stars {
+		padding-top: 24px;
+		padding-bottom: 6px;
+
+		path {
+			fill: $main-color;
+		}
+		path:last-child {
+			fill: #f0f0f0;
+		}
+	}
+	.reviews {
+		font-size: 20px;
+		font-weight: 700;
+		padding-bottom: 26px;
+		span {
+			color: #5b5b5b;
+			font-size: 14px;
+			font-weight: 500;
+		}
+	}
+	.beans {
+		padding-bottom: 25px;
+	}
+	.specs__item {
+		padding-bottom: 11px;
+	}
+	.specs__title {
+		color: #222;
+		font-size: 18px;
+		font-weight: 500;
+		padding-bottom: 4px;
+	}
+}
+.title {
+	font-size: 25px;
+	font-weight: 900;
+	padding-bottom: 10px;
+}
+.desc {
+	font-size: 18px;
+	font-weight: 500;
+	max-width: 269px;
+	padding-bottom: 6px;
+}
+.card__bottom {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	align-items: flex-end;
+}
+.price {
+	min-width: 90px;
+	&__old {
+		color: #c6c6c6;
+		font-size: 25px;
+		font-weight: 500;
+		text-decoration-line: line-through;
+		line-height: 27px;
+	}
+	&__new {
+		font-size: 35px;
+		font-weight: 900;
+		line-height: 37px;
+	}
+}
+button {
+	margin-right: 7px;
+	margin-bottom: -5px;
+}
