@@ -15,7 +15,7 @@ export const Subscribe = () => {
 					<button>Подписаться</button>
 					<div className={styles.input__info}>
 						Нажимая на кнопку “Подписаться”, вы принимаете правила
-						<a href="#!">пользовательского соглашения</a>
+						<a href="#!"> пользовательского соглашения</a>
 					</div>
 				</div>
 			</div>

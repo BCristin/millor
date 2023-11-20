@@ -1,13 +1,13 @@
 import 'swiper/css';
 import 'swiper/css/grid';
-import { Grid } from 'swiper/modules';
+import { Grid, Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import phone from '../../assets/images/instagram/phone.png';
 import imgSlider from '../../assets/images/instagram/post.jpg';
 import { Title } from '../../components/Title/Title';
-import styles from './Instagarm.module.scss';
+import styles from './Instagram.module.scss';
 
-export const Instagarm = () => {
+export const Instagram = () => {
 	return (
 		<div className={styles.instagram}>
 			<div className="container">
@@ -17,8 +17,7 @@ export const Instagarm = () => {
 						<img src={phone} alt="" className={styles.phone} />
 						<div className={styles.post}>
 							<Swiper
-								className="mySwiper"
-								modules={[Grid]}
+								modules={[Grid, Navigation]}
 								spaceBetween={20}
 								slidesPerView={3}
 								navigation={true}
@@ -52,42 +51,6 @@ export const Instagarm = () => {
 								</SwiperSlide>
 							</Swiper>
 						</div>
-
-						{/* <Swiper
-							slidesPerView={3}
-							grid={{
-								rows: 2,
-							}}
-							spaceBetween={20}
-							modules={[Grid]}>
-							<SwiperSlide>
-								<img src={imgSlider} alt="" />
-							</SwiperSlide>{' '}
-							<SwiperSlide>
-								<img src={imgSlider} alt="" />
-							</SwiperSlide>{' '}
-							<SwiperSlide>
-								<img src={imgSlider} alt="" />
-							</SwiperSlide>{' '}
-							<SwiperSlide>
-								<img src={imgSlider} alt="" />
-							</SwiperSlide>{' '}
-							<SwiperSlide>
-								<img src={imgSlider} alt="" />
-							</SwiperSlide>{' '}
-							<SwiperSlide>
-								<img src={imgSlider} alt="" />
-							</SwiperSlide>{' '}
-							<SwiperSlide>
-								<img src={imgSlider} alt="" />
-							</SwiperSlide>{' '}
-							<SwiperSlide>
-								<img src={imgSlider} alt="" />
-							</SwiperSlide>{' '}
-							<SwiperSlide>
-								<img src={imgSlider} alt="" />
-							</SwiperSlide>
-						</Swiper> */}
 					</div>
 				</div>
 			</div>

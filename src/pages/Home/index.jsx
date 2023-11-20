@@ -1,10 +1,10 @@
-import { Footer } from '../../components/Footer/Footer.jsx';
 import { HeaderSlider } from '../../components/HeaderSlider/index.jsx';
 import { Menu } from '../../components/Menu/index.jsx';
 import { Benefits } from '../../section/Benefits/Benefits.jsx';
 import { Catalog } from '../../section/Catalog/Catalog.jsx';
 import { Discount } from '../../section/Discount/Discount.jsx';
-import { Instagarm } from '../../section/Instagram/Instagarm.jsx';
+import { Footer } from '../../section/Footer/Footer.jsx';
+import { Instagram } from '../../section/Instagram/Instagram.jsx';
 import { News } from '../../section/News/News.jsx';
 import { Roasting } from '../../section/Roasting/Roasting.jsx';
 import { Subscribe } from '../../section/Subscribe/Subscribe.jsx';
@@ -43,7 +43,7 @@ export const Home = () => {
 				<Benefits></Benefits>
 				<Roasting></Roasting>
 				<News></News>
-				<Instagarm></Instagarm>
+				<Instagram></Instagram>
 				<Subscribe></Subscribe>
 			</main>
 			<footer className="footer">

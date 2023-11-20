@@ -28,6 +28,24 @@
 		display: inline-block;
 		:global {
 			.swiper-button-prev {
+				width: 70px;
+				height: 70px;
+				right: 211px;
+				top: 370px;
+				background-color: #fff;
+				border-radius: 50%;
+				opacity: 0.5;
+				&::after {
+					content: '';
+					background-image: url('../../assets/icon/arrow-right-instagram.svg');
+					transform: rotate(180deg);
+					background-repeat: no-repeat;
+					background-size: contain;
+					width: 27px;
+					height: 15px;
+				}
+			}
+			.swiper-button-prev.swiper-button-disabled {
 				display: none;
 			}
 			.swiper-button-next {
