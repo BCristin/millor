@@ -7,6 +7,7 @@ import { Discount } from '../../section/Discount/Discount.jsx';
 import { Instagarm } from '../../section/Instagram/Instagarm.jsx';
 import { News } from '../../section/News/News.jsx';
 import { Roasting } from '../../section/Roasting/Roasting.jsx';
+import { Subscribe } from '../../section/Subscribe/Subscribe.jsx';
 import styles from './Home.module.scss';
 
 export const Home = () => {
@@ -43,6 +44,7 @@ export const Home = () => {
 				<Roasting></Roasting>
 				<News></News>
 				<Instagarm></Instagarm>
+				<Subscribe></Subscribe>
 			</main>
 			<footer className="footer">
 				<Footer></Footer>

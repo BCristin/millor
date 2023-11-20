@@ -1,0 +1,71 @@
+.subscribe {
+	padding-left: 12px;
+	padding-bottom: 170px;
+	position: relative;
+	&::before {
+		content: '';
+		position: absolute;
+		background-image: url('../../assets/images/instagram/decor.png');
+		background-repeat: no-repeat;
+		height: 110%;
+		width: 100%;
+		top: -300px;
+		left: 1184px;
+	}
+	.title {
+		margin-bottom: 50px;
+	}
+	.p {
+		max-width: 757px;
+		font-size: 25px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 130%; /* 32.5px */
+		margin-bottom: 60px;
+	}
+	.input {
+		input {
+			margin-bottom: 20px;
+			width: 1100px;
+			border-radius: 40px;
+			background: #f3f3f3;
+			padding: 24px 60px;
+			border: none;
+			color: #c9c9c9;
+			font-size: 25px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 130%; /* 32.5px */
+			::placeholder {
+				color: black;
+			}
+		}
+		button {
+			border-radius: 40px;
+			background: #f9b300;
+			color: #fff;
+
+			font-size: 25px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			border: none;
+			padding: 25px 53px;
+			margin: -260px;
+		}
+
+		&__info {
+			color: #5b5b5b;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 130%; /* 20.8px */
+			a {
+				color: #f9b300;
+				font-style: normal;
+				font-weight: 600;
+				line-height: 130%;
+			}
+		}
+	}
+}
