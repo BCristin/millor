@@ -4,11 +4,11 @@ import { Menu } from '../../components/Menu/index.jsx';
 import { Benefits } from '../../section/Benefits/Benefits.jsx';
 import { Catalog } from '../../section/Catalog/Catalog.jsx';
 import { Discount } from '../../section/Discount/Discount.jsx';
+import { Instagarm } from '../../section/Instagram/Instagarm.jsx';
+import { News } from '../../section/News/News.jsx';
+import { Roasting } from '../../section/Roasting/Roasting.jsx';
+import { Subscribe } from '../../section/Subscribe/Subscribe.jsx';
 import styles from './Home.module.scss';
-
-export const index = () => {
-	return <div className={styles}>index</div>;
-};
 
 export const Home = () => {
 	return (
@@ -41,6 +41,10 @@ export const Home = () => {
 					<Discount></Discount>
 				</div>
 				<Benefits></Benefits>
+				<Roasting></Roasting>
+				<News></News>
+				<Instagarm></Instagarm>
+				<Subscribe></Subscribe>
 			</main>
 			<footer className="footer">
 				<Footer></Footer>

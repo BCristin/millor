@@ -32,13 +32,13 @@
 	}
 }
 .discound {
-	color: #f9b300;
+	color: $main-color;
 	font-size: 18px;
 	font-weight: 700;
 }
 .selector {
 	border-radius: 5px;
-	border: 1px solid #f9b300;
+	border: 1px solid $main-color;
 	background: #fff7e1;
 	width: 132px;
 	height: 33px;
