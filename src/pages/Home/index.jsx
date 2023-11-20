@@ -4,6 +4,7 @@ import { Menu } from '../../components/Menu/index.jsx';
 import { Benefits } from '../../section/Benefits/Benefits.jsx';
 import { Catalog } from '../../section/Catalog/Catalog.jsx';
 import { Discount } from '../../section/Discount/Discount.jsx';
+import { Roasting } from '../../section/Roasting/Roasting.jsx';
 import styles from './Home.module.scss';
 
 export const index = () => {
@@ -41,6 +42,7 @@ export const Home = () => {
 					<Discount></Discount>
 				</div>
 				<Benefits></Benefits>
+				<Roasting></Roasting>
 			</main>
 			<footer className="footer">
 				<Footer></Footer>
