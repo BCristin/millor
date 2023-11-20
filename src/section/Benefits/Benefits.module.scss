@@ -4,10 +4,12 @@
 	padding-bottom: 269px;
 	position: relative;
 	&::after {
-		content: url('../../assets/images/benfits/bg-benefits.svg');
+		content: '';
+
+		background-image: url('../../assets/images/benfits/bg-benefits.svg');
 		// background-size: cover;
 		background-repeat: no-repeat;
-		// background-position-y: -8px;
+		background-position-x: center;
 		position: absolute;
 		height: 100%;
 		width: 100%;
