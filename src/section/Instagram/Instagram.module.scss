@@ -1,3 +1,4 @@
+@import '../../var';
 .instagram {
 	padding-bottom: 293px;
 
@@ -8,12 +9,14 @@
 	&::after {
 		content: '';
 		position: absolute;
-		background-image: url(../../assets/images/instagram/bg.svg);
+		mask: url(../../assets/images/instagram/bg.svg);
+		background-color: $main-color;
+
 		background-repeat: no-repeat;
 		background-position-x: center;
 		width: 100%;
-		height: 110%;
-		top: -11px;
+		height: 75%;
+		top: 424px;
 		z-index: -2;
 	}
 	.phone {
@@ -37,8 +40,9 @@
 				opacity: 0.5;
 				&::after {
 					content: '';
-					background-image: url('../../assets/icon/arrow-right-instagram.svg');
+					mask: url('../../assets/icon/arrow-right-instagram.svg');
 					transform: rotate(180deg);
+					background-color: $main-color;
 					background-repeat: no-repeat;
 					background-size: contain;
 					width: 27px;
@@ -57,7 +61,8 @@
 				border-radius: 50%;
 				&::after {
 					content: '';
-					background-image: url('../../assets/icon/arrow-right-instagram.svg');
+					mask: url('../../assets/icon/arrow-right-instagram.svg');
+					background-color: $main-color;
 					background-repeat: no-repeat;
 					background-size: contain;
 					width: 27px;
@@ -73,12 +78,17 @@
 
 .title {
 	position: relative;
+
 	&::after {
-		content: url('../../assets/images/instagram/logo-instagram.svg');
+		content: '';
+		mask: url('../../assets/images/instagram/logo-instagram.svg');
+
+		background-color: $main-color;
 		width: 86px;
 		height: 86px;
 		position: absolute;
 		top: -12px;
-		padding-left: 54px;
+		margin-left: 54px;
+		// padding-left: 54px;
 	}
 }

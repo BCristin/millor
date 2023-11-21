@@ -1,3 +1,4 @@
+@import '../../var';
 .subscribe {
 	padding-left: 12px;
 	padding-bottom: 170px;
@@ -42,7 +43,7 @@
 		}
 		button {
 			border-radius: 40px;
-			background: #f9b300;
+			background: $main-color;
 			color: #fff;
 
 			font-size: 25px;
@@ -61,7 +62,7 @@
 			font-weight: 500;
 			line-height: 130%; /* 20.8px */
 			a {
-				color: #f9b300;
+				color: $main-color;
 				font-style: normal;
 				font-weight: 600;
 				line-height: 130%;
