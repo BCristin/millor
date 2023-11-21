@@ -153,7 +153,7 @@ export const CardDiscound = () => {
 						<div className={styles.price__old}>350 ₽</div>
 						<div className={styles.price__new}>250 ₽</div>
 					</div>
-					<Button type={'card__discound'}>В корзину</Button>
+					<Button type={'btn__discound'}>В корзину</Button>
 				</div>
 			</div>
 		</div>

@@ -8,7 +8,7 @@ export const Card = ({ img, title }) => {
 				<img src={img} alt={'photo ' + title} />
 			</div>
 			<div className={styles.title}>{title}</div>
-			<Button type={'card__catalog'}>Купить</Button>
+			<Button type={'btn__catalog'}>Купить</Button>
 		</div>
 	);
 };
