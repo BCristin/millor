@@ -39,8 +39,8 @@ export const Promocode = () => {
 						viewBox="0 0 13 12"
 						fill="none"
 						xmlns="http://www.w3.org/2000/svg">
-						<path d="M1 1L12 11" stroke="white" stroke-linecap="round" />
-						<path d="M12 1L0.999999 11" stroke="white" stroke-linecap="round" />
+						<path d="M1 1L12 11" stroke="white" strokeLinecap="round" />
+						<path d="M12 1L0.999999 11" stroke="white" strokeLinecap="round" />
 					</svg>
 				) : validCode ? (
 					<svg

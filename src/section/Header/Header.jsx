@@ -7,10 +7,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Menu } from '../../components/Menu/index.jsx';
 import { SliderItem } from '../../components/SliderItem/index.jsx';
 import styles from './Header.module.scss';
-export const Header = () => {
+export const Header = ({ setIsOpen }) => {
 	return (
 		<>
-			<Menu></Menu>
+			<Menu setIsOpen={setIsOpen}></Menu>
 			<header className={styles.header} id="top">
 				<div className="container">
 					<div className={styles.header__inner}>

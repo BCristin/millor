@@ -7,7 +7,7 @@ import logo from '../../assets/images/logo.png';
 import { InputSearch } from '../InputSearch/InputSearch';
 import styles from './menu.module.scss';
 
-export const Menu = () => {
+export const Menu = ({ setIsOpen }) => {
 	const [visibleInput, setVisibleInput] = useState(false);
 	const [isAtTop, setIsAtTop] = useState(true);
 
@@ -67,7 +67,7 @@ export const Menu = () => {
 						</li>
 						<li>
 							<a href="#!">
-								<img src={user} alt="user" />
+								<img onClick={() => setIsOpen(true)} src={user} alt="user" />
 							</a>
 						</li>
 					</ul>
