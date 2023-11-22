@@ -18,6 +18,11 @@
 
 	text-align: end;
 	margin-top: 5px;
+	position: relative;
+	p {
+		position: absolute;
+		right: 0;
+	}
 	.display__none {
 		display: none;
 	}

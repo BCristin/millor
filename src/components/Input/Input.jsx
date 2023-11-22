@@ -1,14 +1,16 @@
+import cn from 'classnames';
 import { useState } from 'react';
 import styles from './Input.module.scss';
 
-export const Input = ({ children }) => {
-	const [message, setMessage] = useState('');
-	console.table(message);
+export const Input = ({ children, message, className, valueInput }) => {
+	const [messageHidde, setMessageHidde] = useState(false);
+
 	const handler = (e) => {
-		setMessage(e.target.value);
+		setMessageHidde(e.target.value);
+		valueInput(e.target.value.trim());
 	};
 	return (
-		<div className={styles.inner}>
+		<div className={cn(styles.inner, className)}>
 			<input
 				type="text"
 				placeholder={children}
@@ -16,7 +18,7 @@ export const Input = ({ children }) => {
 				className={styles.input}
 				required
 			/>
-			<p className={message ? '' : styles.display__none}>Это обязательное поле</p>
+			<p className={messageHidde ? '' : styles.display__none}>{message}</p>
 		</div>
 	);
 };
