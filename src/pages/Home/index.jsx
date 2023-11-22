@@ -7,11 +7,11 @@ import { Instagram } from '../../section/Instagram/Instagram.jsx';
 import { News } from '../../section/News/News.jsx';
 import { Roasting } from '../../section/Roasting/Roasting.jsx';
 import { Subscribe } from '../../section/Subscribe/Subscribe.jsx';
-
 export const Home = () => {
 	return (
 		<>
 			<Header></Header>
+
 			<main className="main">
 				<div className="container">
 					<Catalog></Catalog>

@@ -1,3 +1,4 @@
+import { PMore } from '../PMore/PMore';
 import styles from './CardNews.module.scss';
 export const CardNews = ({ img, children, title }) => {
 	return (
@@ -6,7 +7,7 @@ export const CardNews = ({ img, children, title }) => {
 			<div className={styles.info}>
 				<div className={styles.title}>{title}</div>
 				<div className={styles.text}>{children}</div>
-				<div className={styles.more}>Подробнее</div>
+				<PMore>Подробнее</PMore>
 			</div>
 		</div>
 	);

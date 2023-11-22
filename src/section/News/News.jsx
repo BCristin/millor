@@ -1,5 +1,6 @@
 import img from '../../assets/images/news/news-img.jpg';
 import { CardNews } from '../../components/CardNews/CardNews';
+import { SeeAll } from '../../components/SeeAll/SeeAll';
 import { Title } from '../../components/Title/Title';
 import styles from './News.module.scss';
 
@@ -10,7 +11,8 @@ export const News = () => {
 				<div className={styles.news__inner}>
 					<div className={styles.news__top}>
 						<Title className={styles.title}>Новости компании</Title>
-						<p className={styles.more}>Читать все</p>
+						{/* <p className={styles.more}>Читать все</p> */}
+						<SeeAll className={styles.seeall}>Читать все</SeeAll>
 					</div>
 					<div className={styles.news__box}>
 						<CardNews
