@@ -1,13 +1,21 @@
 @import '../../var';
 .benefits {
 	padding-top: 117px;
+	padding-bottom: 269px;
+	position: relative;
+	&::after {
+		content: '';
 
-	padding-bottom: 285px;
-
-	background-image: url('../../assets/images/benfits/bg-benefits.svg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position-y: -8px;
+		background-image: url('../../assets/images/benfits/bg-benefits.svg');
+		// background-size: cover;
+		background-repeat: no-repeat;
+		background-position-x: center;
+		position: absolute;
+		height: 105%;
+		width: 100%;
+		top: -11px;
+		z-index: -1;
+	}
 
 	&__inner {
 		display: flex;

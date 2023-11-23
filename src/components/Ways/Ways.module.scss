@@ -1,0 +1,26 @@
+@import '../../var';
+
+.ways {
+	border-radius: 20px;
+	background: #fff;
+	box-shadow: 0px 0px 30px 0px rgba(149, 149, 149, 0.25);
+	width: 189px;
+	height: 190px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
+	padding: 20px;
+	font-size: 20px;
+	font-weight: 500;
+
+	&:hover {
+		border-radius: 20px;
+		background: $main-color;
+		box-shadow: 0px 0px 30px 0px rgba(149, 149, 149, 0.25);
+		color: #fff;
+		path {
+			fill: #fff;
+		}
+	}
+}

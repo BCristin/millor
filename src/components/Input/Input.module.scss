@@ -1,0 +1,50 @@
+@import '../../var';
+.input {
+	border-radius: 5px;
+	border: 1px solid #f6f6f6;
+	background: #fcfcfc;
+	width: 680px;
+	padding: 23px 60px;
+	outline: none;
+	color: #000;
+
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+
+	&::placeholder {
+		color: #c4c4c4;
+		font-size: 20px;
+		font-weight: 500;
+	}
+}
+.inner {
+	color: $main-color;
+	font-size: 16px;
+	font-weight: 500;
+
+	text-align: end;
+	// margin-top: 5px;
+	position: relative;
+	p {
+		position: absolute;
+		right: 0;
+		color: $main-color;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+	}
+	.display__none {
+		display: none;
+	}
+	.view__password {
+		position: absolute;
+		top: 22px;
+		right: 22px;
+		padding: 5px;
+		width: 32px;
+		height: 26px;
+	}
+}

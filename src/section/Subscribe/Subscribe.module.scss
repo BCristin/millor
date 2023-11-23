@@ -1,0 +1,27 @@
+@import '../../var';
+.subscribe {
+	padding-left: 12px;
+	padding-bottom: 170px;
+	position: relative;
+	&::before {
+		content: '';
+		position: absolute;
+		background-image: url('../../assets/images/instagram/decor.png');
+		background-repeat: no-repeat;
+		height: 110%;
+		width: 100%;
+		top: -300px;
+		left: 1184px;
+	}
+	.title {
+		margin-bottom: 50px;
+	}
+	.p {
+		max-width: 757px;
+		font-size: 25px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 130%; /* 32.5px */
+		margin-bottom: 60px;
+	}
+}

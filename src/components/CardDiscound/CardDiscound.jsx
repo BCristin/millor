@@ -1,5 +1,6 @@
 import product from '../../assets/images/discount/product.png';
 import { Button } from '../Button';
+import { Select } from '../Select/Select';
 import styles from './CardDiscound.module.scss';
 
 export const CardDiscound = () => {
@@ -11,11 +12,7 @@ export const CardDiscound = () => {
 						<div className={styles.circle}>%</div>
 						<div className={styles.discound}>Скидки</div>
 					</div>
-					<select className={styles.selector} name="" id="">
-						<option value="250"> 250 г.</option>
-						<option value="500"> 500 г.</option>
-						<option value="500"> 1000 г.</option>
-					</select>
+					<Select></Select>
 				</div>
 				<div className={styles.stats}>
 					<img src={product} alt="product item" />
@@ -153,7 +150,7 @@ export const CardDiscound = () => {
 						<div className={styles.price__old}>350 ₽</div>
 						<div className={styles.price__new}>250 ₽</div>
 					</div>
-					<Button type={'card__discound'}>В корзину</Button>
+					<Button type={'btn__discound'}>В корзину</Button>
 				</div>
 			</div>
 		</div>

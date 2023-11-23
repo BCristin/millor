@@ -1,27 +1,32 @@
 @import '../../var';
+
 .btn {
-	border-radius: 5px;
-	background-color: $main-color;
-	color: #fff;
 	font-size: 30px;
 	font-weight: 700;
+
+	max-width: 400px;
 	padding: 22px 56px;
+
+	color: #fff;
 	border: none;
+	border-radius: 5px;
+	background-color: $main-color;
 
 	&:hover {
 		background: #e2a300;
 	}
 }
-.card__catalog {
-	width: 100%;
-	padding-top: 15px;
-	padding-bottom: 15px;
+
+.btn__catalog {
 	font-size: 25px;
+
+	padding: 15px;
 }
-.card__discound {
-	width: 152px;
-	height: 23px;
+
+.btn__discound {
 	font-size: 18px;
-	padding: 13px;
+
+	width: 152px;
 	margin: 0px -3px -5px 0;
+	padding: 13px;
 }
