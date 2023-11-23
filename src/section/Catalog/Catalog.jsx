@@ -11,7 +11,7 @@ export const Catalog = () => {
 		<section className={styles.catalog} id="catalog">
 			<Title className={styles.title}>Каталоги нашей продукции</Title>
 			<div className={styles.cards}>
-				<Card img={coffeeBeans} title={'Здоровое питание'}></Card>
+				<Card img={coffeeBeans} title={'Свежеобжаренный кофе'}></Card>
 				<Card img={teaKettle} title={'Чай и кофейные напитки'}></Card>
 				<Card img={coffeMachine} title={'Продукция для вендинга'}></Card>
 				<Card img={cereal} title={'Здоровое питание'}></Card>
