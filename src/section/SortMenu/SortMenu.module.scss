@@ -1,0 +1,54 @@
+@import '../../var';
+
+.sortmenu {
+	.top {
+		display: flex;
+		gap: 20px;
+		.step,
+		.bigsort {
+			border-radius: 20px;
+			background: #fff;
+			box-shadow: 0px 0px 30px 0px rgba(149, 149, 149, 0.25);
+		}
+		.step {
+			width: 400px;
+			height: 526px;
+			display: flex;
+			gap: 50px;
+			padding: 41px 30px 48px;
+			margin-left: 8px;
+			.line {
+				background-color: $main-color;
+				width: 15px;
+				height: 100%;
+				border-radius: 10px;
+			}
+			&__content {
+				display: flex;
+				flex-direction: column;
+				gap: 47px;
+				.title {
+					color: #000;
+					font-size: 30px;
+					font-style: normal;
+					font-weight: 700;
+					line-height: normal;
+				}
+			}
+		}
+		.bigsort {
+			width: 1240px;
+			height: 526px;
+		}
+		label {
+			svg + svg {
+				margin-left: 10px;
+			}
+		}
+	}
+
+	.bottom {
+		display: flex;
+		gap: 20px;
+	}
+}

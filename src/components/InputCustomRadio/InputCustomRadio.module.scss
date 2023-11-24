@@ -1,0 +1,23 @@
+@import '../../var';
+
+.radiobutton-input {
+	display: none;
+}
+
+.radiobutton-label {
+	cursor: pointer;
+}
+
+.custom-radiobutton {
+	display: inline-block;
+	margin-right: 17px;
+	width: 25px;
+	height: 25px;
+
+	border-radius: 50%;
+	background-color: #e4e4e4;
+}
+
+.radiobutton-input:checked + .custom-radiobutton {
+	background-color: $main-color;
+}

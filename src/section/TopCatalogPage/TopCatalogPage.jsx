@@ -5,7 +5,7 @@ export const TopCatalogPage = () => {
 	return (
 		<div className={styles.topCatalogCoffe}>
 			<div className={'container'}>
-				<Breadcrumbs></Breadcrumbs>
+				<Breadcrumbs className={styles.breadcrumbs}></Breadcrumbs>
 				<h1>Свежеобжаренный кофе</h1>
 			</div>
 		</div>

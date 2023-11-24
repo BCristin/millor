@@ -4,13 +4,13 @@ import { Link, useLocation } from 'react-router-dom';
 import styles from './Breadcrumbs.module.scss';
 
 const linksInfo = [
-	{ name: 'Свежеобжаренный кофе', link: 'coffe' },
-	{ name: 'Чай и кофейные напитки', link: 'tea' },
-	{ name: 'Продукция для вендинга', link: 'machine' },
-	{ name: 'Здоровое питание', link: 'cereal' },
+	{ name: 'Свежеобжаренный кофе', link: 'coffe', optionlink: true },
+	{ name: 'Чай и кофейные напитки', link: 'tea', optionlink: true },
+	{ name: 'Продукция для вендинга', link: 'machine', optionlink: true },
+	{ name: 'Здоровое питание', link: 'cereal', optionlink: true },
 ];
 
-const Breadcrumbs = () => {
+const Breadcrumbs = ({ className }) => {
 	const location = useLocation();
 	const pathnames = location.pathname.split('/').filter((x) => x);
 
@@ -26,23 +26,30 @@ const Breadcrumbs = () => {
 		</svg>
 	);
 	return (
-		<div>
+		<div className={className}>
 			<Link to="/">Главная</Link>
-			<Link to={{ pathname: '/', hash: '#catalog' }}>
-				{svg}
-				Каталог товаров
-			</Link>
 			{pathnames.map((name, index) => {
 				const routeTo = `/${pathnames.slice(0, index + 1).join('/')}`;
 				const isLast = index === pathnames.length - 1;
-				const realName = linksInfo.filter((item) => item.link === name)[0].name;
+				const realNameObj = linksInfo.filter((item) => item.link === name)[0];
+				const realName = realNameObj.name;
+				const optional = realNameObj.optionlink ? (
+					<Link to={{ pathname: '/', hash: '#catalog' }}>
+						{svg}
+						Каталог товаров
+					</Link>
+				) : (
+					''
+				);
 				return isLast ? (
 					<span key={index}>
+						{optional}
 						{svg}
 						{realName}
 					</span>
 				) : (
 					<span key={index}>
+						{optional}
 						<Link to={routeTo}>
 							{svg} {realName}
 						</Link>
