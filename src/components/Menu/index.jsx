@@ -34,9 +34,9 @@ export const Menu = ({ setIsOpen }) => {
 					</Link>
 					<ul className={cn(styles.nav__list, { [styles.invisible]: visibleInput })}>
 						<li>
-							<a className={styles.nav__link} href="#catalog">
+							<Link className={styles.nav__link} to={{ pathname: '/', hash: '#catalog' }}>
 								Каталог товаров
-							</a>
+							</Link>
 						</li>
 						<li>
 							<a className={styles.nav__link} href="#!">

@@ -1,3 +1,4 @@
+import { CatalogCards } from '../section/CatalogCards/CatalogCards';
 import { SortMenu } from '../section/SortMenu/SortMenu';
 import { TopCatalogPage } from '../section/TopCatalogPage/TopCatalogPage';
 
@@ -6,6 +7,7 @@ export const CatalogCoffe = () => {
 		<>
 			<TopCatalogPage></TopCatalogPage>
 			<SortMenu></SortMenu>
+			<CatalogCards></CatalogCards>
 		</>
 	);
 };

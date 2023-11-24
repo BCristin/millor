@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { InputCustomRadio } from '../../components/InputCustomRadio/InputCustomRadio';
+import { SortList } from '../../components/SortList/SortList';
 import { Ways } from '../../components/Ways/Ways';
 import styles from './SortMenu.module.scss';
 
@@ -12,7 +13,7 @@ export const SortMenu = () => {
 			<div className={styles.sortmenu}>
 				<div className={styles.top}>
 					<div className={styles.step}>
-						<div className={styles.line}></div>
+						<div className={styles['line--left']}></div>
 						<div className={styles.step__content}>
 							<div className={styles.title}> Степень обжарки</div>
 							{valueInputs.map((value) => (
@@ -25,7 +26,47 @@ export const SortMenu = () => {
 							))}
 						</div>
 					</div>
-					<div className={styles.bigsort}></div>
+					<div className={styles.bigsort}>
+						<div className={styles['line--top']}></div>
+						<div className={styles.sortZone}>
+							<SortList
+								title="География"
+								gridName="1"
+								option={[
+									'Африка',
+									'Йемен',
+									'Уганда',
+									'Эфиопия',
+									'Азия',
+									'Центр. Америка',
+									'Лат. Америка',
+								]}></SortList>
+							<SortList
+								title="Кислинка"
+								gridName="2"
+								option={['Низкая', 'Средняя', 'Высокая']}></SortList>
+							<SortList
+								title="Способ обработки"
+								gridName="3"
+								option={['Сухая', 'Мытая', 'Прочие']}></SortList>
+							<SortList
+								title="Особые"
+								gridName="4"
+								option={[
+									'Популярное',
+									'Новый урожай',
+									'Ваш выбор',
+									'Микролот',
+									'Сорт недели',
+									'Скидки',
+									'Новинка',
+								]}></SortList>
+							<SortList
+								title="Вид кофе"
+								gridName="5"
+								option={['Арабика', 'Робуста', 'Смесь арабик', 'Смесь арабика/робуста']}></SortList>
+						</div>
+					</div>
 				</div>
 				<div className={styles.bottom}>
 					<Ways>
@@ -225,6 +266,8 @@ export const SortMenu = () => {
 						</svg>
 					</Ways>
 				</div>
+
+				<div className="link">Сортировка</div>
 			</div>
 		</div>
 	);

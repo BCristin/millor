@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import cup from '../../assets/images/cup-coffe.png';
 import { Button } from '../Button';
 import styles from './SliderItem.module.scss';
@@ -12,7 +13,10 @@ export const SliderItem = ({ children }) => {
 				<br />
 				Мы обжариваем кофе <span>каждые выходные.</span>
 			</p>
-			<Button>Посмотреть каталог</Button>
+
+			<Link to={{ pathname: '/', hash: '#catalog' }}>
+				<Button>Посмотреть каталог</Button>
+			</Link>
 			<img className={styles.img} src={cup} alt="" />
 		</div>
 	);
