@@ -7,6 +7,7 @@ import { PopupRegiste } from '../components/Modals/PopupRegiste/PopupRegiste.jsx
 import { PopupVerficationCode } from '../components/Modals/PopupVerficationCode/PopupVerficationCode.jsx';
 import { Footer } from '../section/Footer/Footer.jsx';
 import { Subscribe } from '../section/Subscribe/Subscribe.jsx';
+
 export const MainLayout = () => {
 	const [isOpenRegister, setIsOpenRegister] = useState(false);
 	const [isOpenLogin, setIsOpenLogin] = useState(false);

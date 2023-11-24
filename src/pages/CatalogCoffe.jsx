@@ -1,9 +1,9 @@
-import { Ways } from '../components/Ways/Ways';
+import { TopCatalogPage } from '../section/TopCatalogPage/TopCatalogPage';
 
 export const CatalogCoffe = () => {
 	return (
 		<>
-			<Ways></Ways>
+			<TopCatalogPage></TopCatalogPage>
 		</>
 	);
 };

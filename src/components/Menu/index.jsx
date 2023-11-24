@@ -1,5 +1,6 @@
 import cn from 'classnames';
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import cart from '../../assets/icon/cart.svg';
 import search from '../../assets/icon/search.svg';
 import user from '../../assets/icon/user.svg';
@@ -28,9 +29,9 @@ export const Menu = ({ setIsOpen }) => {
 			})}>
 			<div className="container">
 				<nav className={styles.nav}>
-					<a href="#root">
+					<Link to="/">
 						<img src={logo} alt="logo" className={styles.logo} />
-					</a>
+					</Link>
 					<ul className={cn(styles.nav__list, { [styles.invisible]: visibleInput })}>
 						<li>
 							<a className={styles.nav__link} href="#catalog">
