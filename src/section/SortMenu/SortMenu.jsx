@@ -267,7 +267,7 @@ export const SortMenu = () => {
 					</Ways>
 				</div>
 
-				<div className="link">Сортировка</div>
+				<div className={styles.link}>Сортировка</div>
 			</div>
 		</div>
 	);

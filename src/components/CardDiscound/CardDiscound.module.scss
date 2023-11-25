@@ -14,7 +14,7 @@
 		&_inner {
 			display: flex;
 			flex-direction: column;
-			gap: 17px;
+			gap: 10px;
 		}
 	}
 	&__bottom {
@@ -36,6 +36,7 @@
 	font-size: 35px;
 	font-weight: 700;
 	margin-top: -56px;
+	margin-bottom: 7px;
 }
 
 .discound {
@@ -43,7 +44,9 @@
 	font-size: 18px;
 	font-weight: 700;
 }
-
+.discound + .discound {
+	margin-top: 0px;
+}
 .stats {
 	display: flex;
 	padding-top: 20px;

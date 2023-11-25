@@ -3,14 +3,23 @@ import { Button } from '../Button';
 import { Select } from '../Select/Select';
 import styles from './CardDiscound.module.scss';
 
-export const CardDiscound = () => {
+export const CardDiscound = ({ dicount }) => {
 	return (
 		<div className={styles.inner}>
 			<div className={styles.card}>
 				<div className={styles.card__top}>
 					<div className={styles.card__top_inner}>
-						<div className={styles.circle}>%</div>
-						<div className={styles.discound}>Скидки</div>
+						{dicount ? (
+							<>
+								<div className={styles.circle}>%</div>
+								<div className={styles.discound}>Скидки</div>
+							</>
+						) : (
+							<>
+								<div className={styles.discound}>Популярное</div>
+								<div className={styles.discound}>Новый урожай</div>
+							</>
+						)}
 					</div>
 					<Select></Select>
 				</div>
