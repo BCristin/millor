@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { InputCustomRadio } from '../../components/InputCustomRadio/InputCustomRadio';
+import { SelectSort } from '../../components/SelectSort/SelectSort';
 import { SortList } from '../../components/SortList/SortList';
 import { Ways } from '../../components/Ways/Ways';
 import styles from './SortMenu.module.scss';
@@ -267,7 +268,7 @@ export const SortMenu = () => {
 					</Ways>
 				</div>
 
-				<div className={styles.link}>Сортировка</div>
+				<SelectSort></SelectSort>
 			</div>
 		</div>
 	);
