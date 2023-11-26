@@ -1,3 +1,4 @@
+import product from '../assets/images/catalog-page/tea/tea1.png';
 import { CardTea } from '../components/CardTea/CardTea';
 import { CatalogCards } from '../section/CatalogCards/CatalogCards';
 import { SortMenuOther } from '../section/SortMenuOther/SortMenuOther';
@@ -29,18 +30,18 @@ export const CatalogTea = () => {
 			<TopCatalogPage className={'remove-decor'}></TopCatalogPage>
 			<SortMenuOther date={cards}></SortMenuOther>
 			<CatalogCards>
-				<CardTea />
-				<CardTea />
-				<CardTea />
-				<CardTea dicount={true} />
-				<CardTea />
-				<CardTea />
-				<CardTea />
-				<CardTea dicount={true} />
-				<CardTea />
-				<CardTea />
-				<CardTea />
-				<CardTea dicount={true} />
+				<CardTea product={product} />
+				<CardTea product={product} />
+				<CardTea product={product} />
+				<CardTea product={product} dicount={true} />
+				<CardTea product={product} />
+				<CardTea product={product} />
+				<CardTea product={product} />
+				<CardTea product={product} dicount={true} />
+				<CardTea product={product} />
+				<CardTea product={product} />
+				<CardTea product={product} />
+				<CardTea product={product} dicount={true} />
 			</CatalogCards>
 		</div>
 	);

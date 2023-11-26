@@ -24,8 +24,8 @@ export const SelectSort = ({ className }) => {
 						height="14"
 						viewBox="0 0 14 14"
 						fill="none">
-						<path d="M1 1L13 13" stroke="black" stroke-linecap="round" />
-						<path d="M13 1L1 13" stroke="black" stroke-linecap="round" />
+						<path d="M1 1L13 13" stroke="black" strokeLinecap="round" />
+						<path d="M13 1L1 13" stroke="black" strokeLinecap="round" />
 					</svg>
 				</div>
 				<div className={cn(styles.select__popup, { [styles.select__popup_open]: open })}>

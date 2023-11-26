@@ -1,9 +1,8 @@
-import product from '../../assets/images/catalog-page/tea/tea1.png';
 import { Button } from '../Button';
 import { Select } from '../Select/Select';
 import styles from './CardTea.module.scss';
 
-export const CardTea = ({ dicount = false }) => {
+export const CardTea = ({ dicount = false, product }) => {
 	return (
 		<div className={styles.inner}>
 			<div className={styles.card}>
