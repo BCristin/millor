@@ -34,7 +34,7 @@ const Breadcrumbs = ({ className }) => {
 				const isLast = index === pathnames.length - 1;
 
 				const realNameObj = linksInfo.filter((item) => item.link === name)[0];
-				const realName = realNameObj?.name || name;
+				const realName = realNameObj?.name || name.replace(/-|%20/g, ' ');
 
 				const optional = realNameObj?.optionlink ? (
 					<Link to={{ pathname: '/', hash: '#catalog' }}>

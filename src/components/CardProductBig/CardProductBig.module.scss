@@ -1,3 +1,24 @@
+.card__product__big {
+	background-image: url('../../assets/images/product/bg.svg');
+	background-repeat: no-repeat;
+	background-position-y: -163px;
+	height: 100%;
+	width: 100%;
+	padding-bottom: 103px;
+
+	padding-top: 40px;
+}
+.breadcrumbs {
+	color: #222;
+	a {
+		color: #222;
+	}
+	svg {
+		circle {
+			fill: #222;
+		}
+	}
+}
 .card {
 	border-radius: 20px;
 	border: 1px solid #e4e4e4;
