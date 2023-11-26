@@ -1,9 +1,9 @@
 import product from '../../assets/images/discount/product.png';
 import { Button } from '../Button';
 import { Select } from '../Select/Select';
-import styles from './CardDiscound.module.scss';
+import styles from './CardCoffe.module.scss';
 
-export const CardDiscound = ({ dicount }) => {
+export const CardCoffe = ({ dicount }) => {
 	return (
 		<div className={styles.inner}>
 			<div className={styles.card}>

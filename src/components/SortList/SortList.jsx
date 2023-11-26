@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { InputRadioList } from '../InputRadioList/InputRadioList';
 import styles from './SortList.module.scss';
 
-export const SortList = ({ title, option, gridName }) => {
+export const SortList = ({ title, option }) => {
 	const [checkedValue, setCheckedValue] = useState('');
 
 	return (

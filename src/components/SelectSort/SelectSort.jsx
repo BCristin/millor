@@ -2,7 +2,7 @@ import cn from 'classnames';
 import { useState } from 'react';
 import styles from './SelectSort.module.scss';
 
-export const SelectSort = () => {
+export const SelectSort = ({ className }) => {
 	const [open, setOpen] = useState(false);
 	const options = ['По возрастанию цены', 'По убыванию цены', 'По рейтингу', 'По кислотности'];
 	const [defaultValui, setDefaultValue] = useState('Сортировка');
@@ -10,7 +10,7 @@ export const SelectSort = () => {
 		if (!e.target.closest('.' + styles.select)) setOpen(false);
 	};
 	return (
-		<>
+		<div className={className}>
 			<div className={cn({ [styles.inner]: open })} onClick={handleClickOutside}></div>
 			<div className={cn(styles.select, { [styles.select__open]: open })}>
 				<div
@@ -43,6 +43,6 @@ export const SelectSort = () => {
 					</ul>
 				</div>
 			</div>
-		</>
+		</div>
 	);
 };
