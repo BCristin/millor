@@ -17,7 +17,7 @@ const date = [
 ];
 export const CatalogCereal = () => {
 	return (
-		<div>
+		<>
 			<TopCatalogPage className={'remove-decor'}></TopCatalogPage>
 			<SortMenuOther date={date}></SortMenuOther>
 			<CatalogCards>
@@ -34,6 +34,6 @@ export const CatalogCereal = () => {
 				<CardTea product={product} />
 				<CardTea product={product} dicount={true} />
 			</CatalogCards>
-		</div>
+		</>
 	);
 };

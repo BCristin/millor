@@ -1,8 +1,8 @@
 @import '../../var';
 
 .catalogCards {
-	margin-bottom: 169px;
 	position: relative;
+	padding-bottom: 20px;
 	&::before {
 		content: '';
 		background-color: #f5f5f5;
@@ -46,6 +46,6 @@
 		width: 100%;
 		text-align: center;
 		margin-top: 60px;
-		margin-bottom: 140px;
+		// margin-bottom: 140px;
 	}
 }

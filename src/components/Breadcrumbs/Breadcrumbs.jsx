@@ -12,8 +12,7 @@ const linksInfo = [
 
 const Breadcrumbs = ({ className }) => {
 	const location = useLocation();
-	const pathnames = location.pathname.split('/').filter((x) => x);
-
+	const pathnames = location.pathname.split('/').filter((x) => x); //['cereal', 'product']
 	const svg = (
 		<svg
 			className={styles.svg}
@@ -25,15 +24,19 @@ const Breadcrumbs = ({ className }) => {
 			<circle cx="2" cy="2" r="2" fill="white" />
 		</svg>
 	);
+
 	return (
 		<div className={className}>
 			<Link to="/">Главная</Link>
+
 			{pathnames.map((name, index) => {
 				const routeTo = `/${pathnames.slice(0, index + 1).join('/')}`;
 				const isLast = index === pathnames.length - 1;
+
 				const realNameObj = linksInfo.filter((item) => item.link === name)[0];
-				const realName = realNameObj.name;
-				const optional = realNameObj.optionlink ? (
+				const realName = realNameObj?.name || name;
+
+				const optional = realNameObj?.optionlink ? (
 					<Link to={{ pathname: '/', hash: '#catalog' }}>
 						{svg}
 						Каталог товаров
@@ -41,6 +44,7 @@ const Breadcrumbs = ({ className }) => {
 				) : (
 					''
 				);
+
 				return isLast ? (
 					<span key={index}>
 						{optional}

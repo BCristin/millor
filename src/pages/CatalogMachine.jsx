@@ -17,7 +17,7 @@ const date = [
 ];
 export const CatalogMachine = () => {
 	return (
-		<div>
+		<>
 			<TopCatalogPage className={'remove-decor'}></TopCatalogPage>
 			<SortMenuOther date={date}></SortMenuOther>
 			<CatalogCards>
@@ -34,6 +34,6 @@ export const CatalogMachine = () => {
 				<CardMachine />
 				<CardMachine />
 			</CatalogCards>
-		</div>
+		</>
 	);
 };

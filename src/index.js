@@ -9,6 +9,8 @@ import { CatalogMachine } from './pages/CatalogMachine';
 import { CatalogTea } from './pages/CatalogTea';
 
 import { Home } from './pages/Home';
+import { NotFound } from './pages/NotFound';
+import { Product } from './pages/Product';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -21,6 +23,8 @@ root.render(
 					<Route path="/tea" element={<CatalogTea />} />
 					<Route path="/machine" element={<CatalogMachine />} />
 					<Route path="/cereal" element={<CatalogCereal />} />
+					<Route path="/cereal/:id" element={<Product />} />
+					<Route path="*" element={<NotFound />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>

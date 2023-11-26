@@ -1,12 +1,13 @@
+import classNames from 'classnames';
 import { useState } from 'react';
 import { InputRadioList } from '../InputRadioList/InputRadioList';
 import styles from './SortList.module.scss';
 
-export const SortList = ({ title, option }) => {
-	const [checkedValue, setCheckedValue] = useState('');
+export const SortList = ({ title, option, defaultSelect = '', className }) => {
+	const [checkedValue, setCheckedValue] = useState(option[defaultSelect - 1]);
 
 	return (
-		<div className={styles['sort-list']}>
+		<div className={classNames(styles['sort-list'], className)}>
 			<div className={styles.title}> {title}</div>
 			{option.map((value) => (
 				<InputRadioList

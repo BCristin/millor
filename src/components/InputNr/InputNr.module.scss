@@ -1,0 +1,30 @@
+.nr__pieces {
+	width: 260px;
+	height: 70px;
+	border-radius: 5px;
+	border: 1px solid #d6d6d6;
+	background: #f6f6f6;
+	display: flex;
+	justify-content: space-around;
+	color: #222;
+
+	font-size: 25px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	align-items: center;
+	.minus,
+	.plus {
+		min-height: 70px;
+		width: 70px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-weight: 500;
+		font-size: 30px;
+		cursor: pointer;
+	}
+	.disabled {
+		color: #c9c9c9;
+	}
+}
