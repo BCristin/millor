@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Button } from '../Button';
 import { Select } from '../Select/Select';
 import styles from './CardTea.module.scss';
@@ -41,7 +42,10 @@ export const CardTea = ({ dicount = false, product }) => {
 				<div className={styles.reviews}>
 					4.0 <span> (32 отзыва)</span>
 				</div>
-				<img src={product} alt="product item" />
+
+				<Link to="/cereal/1">
+					<img src={product} alt="product item" />
+				</Link>
 				<div className={styles.title}>Наименование товара</div>
 				<div className={styles.desc}>Черный чай</div>
 				<div className={styles.card__bottom}>

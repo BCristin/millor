@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import product from '../../assets/images/catalog-page/machine/machine.jpg';
 import { Button } from '../Button';
 import { Select } from '../Select/Select';
@@ -42,7 +43,9 @@ export const CardMachine = ({ dicount = false }) => {
 				<div className={styles.reviews}>
 					4.0 <span> (32 отзыва)</span>
 				</div>
-				<img src={product} alt="product item" />
+				<Link to="/cereal/1">
+					<img src={product} alt="product item" />
+				</Link>
 				<div className={styles.title}>Наименование товара</div>
 				<div className={styles.desc}>Гранулированный кофе</div>
 				<div className={styles.card__bottom}>
