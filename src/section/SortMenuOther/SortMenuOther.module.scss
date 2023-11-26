@@ -1,45 +1,56 @@
 .cards {
 	display: flex;
-	gap: 20px;
 	flex-wrap: wrap;
+
+	gap: 20px;
+
 	.card {
+		font-size: 25px;
+		font-weight: 700;
+		font-style: normal;
+		line-height: normal;
+
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: space-between;
+
+		width: 400px;
+		height: 320px;
+		padding: 30px 34px 40px;
+
+		text-align: center;
+
 		border-radius: 20px;
 		background: #fff;
 		box-shadow: 0px 0px 30px 0px rgba(149, 149, 149, 0.25);
-		width: 400px;
-		height: 320px;
-		padding: 30px 0 40px;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+
 		gap: 16px;
 
-		font-size: 25px;
-		font-style: normal;
-		font-weight: 700;
-		line-height: normal;
 		img {
-			max-height: 200px;
 			width: fit-content;
+			max-height: 200px;
 		}
 	}
+
 	.invisibleCard {
+		position: relative;
+
 		width: 400px;
 		height: 320px;
-		position: relative;
+
 		// visibility: hidden;
+
 		.decor {
 			position: absolute;
-			width: 819px;
-			height: 655px;
 			bottom: -20px;
-			// right: -246px;
 			left: -90px;
-			// right: 0;
+
+			width: 819px;
 		}
 	}
 }
+
 .sortSelect {
 	margin-top: 50px;
 	margin-bottom: 50px;

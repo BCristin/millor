@@ -3,7 +3,7 @@ import { CatalogCards } from '../section/CatalogCards/CatalogCards';
 import { SortMenuOther } from '../section/SortMenuOther/SortMenuOther';
 import { TopCatalogPage } from '../section/TopCatalogPage/TopCatalogPage';
 
-export const Catalog = () => {
+export const CatalogCereal = () => {
 	return (
 		<div>
 			<TopCatalogPage className={'remove-decor'}></TopCatalogPage>
