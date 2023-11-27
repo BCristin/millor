@@ -6,13 +6,14 @@ export const Reviews = () => {
 		<div className={styles.reviews}>
 			<div className={'container'}>
 				<div className={styles.inner}>
-					{' '}
 					<div className={styles.title}>Отзывы</div>
 					<CardReviews></CardReviews>
 					<CardReviews></CardReviews>
 					<CardReviews></CardReviews>
-					{/* <CardReviews></CardReviews> */}
-					{/*//! de rezolvat cu bg , de facut adaptiv, cand se adauga elemente sa se mareasca si el */}
+					<CardReviews></CardReviews>
+					<CardReviews></CardReviews>
+					<CardReviews></CardReviews>
+
 					<button className={styles.button}>Показать еще</button>
 				</div>
 			</div>
