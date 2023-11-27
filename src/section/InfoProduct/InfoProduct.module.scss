@@ -142,4 +142,54 @@
 			}
 		}
 	}
+	margin-bottom: 100px;
+}
+.how_to_cook {
+	padding-top: 50px;
+	padding-bottom: 100px;
+	border: 1px solid #b3b3b3;
+	.title {
+		margin-bottom: 60px;
+	}
+	.cards {
+		display: flex;
+		gap: 21px;
+	}
+}
+
+.additionally {
+	padding-top: 50px;
+	margin-bottom: 150px;
+	img {
+		margin-bottom: 60px;
+		border-radius: 20px;
+	}
+}
+
+.title {
+	color: #000;
+	font-family: Gilroy;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 900;
+	line-height: normal;
+}
+.title_second {
+	color: #000;
+	font-family: Gilroy;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+.text {
+	margin-top: 60px;
+	margin-bottom: 70px;
+	color: #222;
+	font-family: Gilroy;
+	font-size: 25px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 130%; /* 32.5px */
+	max-width: 1380px;
 }

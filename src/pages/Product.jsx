@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
-import { CardProductBig } from '../components/CardProductBig/CardProductBig';
-import { InfoProduct } from '../components/InfoProduct/InfoProduct';
+import { CardProductBig } from '../section/CardProductBig/CardProductBig';
+import { InfoProduct } from '../section/InfoProduct/InfoProduct';
+import { Reviews } from '../section/Reviews/Reviews';
 
 export const Product = () => {
 	const param = useParams();
@@ -9,6 +10,7 @@ export const Product = () => {
 		<>
 			<CardProductBig />
 			<InfoProduct></InfoProduct>
+			<Reviews></Reviews>
 		</>
 	);
 };
