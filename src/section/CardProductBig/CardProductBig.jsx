@@ -1,9 +1,9 @@
 import internal from '../../assets/images/product/coffe.png';
 import img from '../../assets/images/product/image 5.png';
-import Breadcrumbs from '../Breadcrumbs/Breadcrumbs';
-import { Button } from '../Button';
-import { InputNr } from '../InputNr/InputNr';
-import { SortList } from '../SortList/SortList';
+import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs';
+import { Button } from '../../components/Button';
+import { InputNr } from '../../components/InputNr/InputNr';
+import { SortList } from '../../components/SortList/SortList';
 import styles from './CardProductBig.module.scss';
 
 export const CardProductBig = () => {

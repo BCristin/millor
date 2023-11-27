@@ -1,0 +1,54 @@
+.card_review {
+	border-radius: 20px;
+	background: #fff;
+	box-shadow: 0px 0px 30px 0px rgba(149, 149, 149, 0.25);
+	color: #000;
+	font-size: 20px;
+	font-weight: 500;
+	.top {
+		padding: 40px 140px 86px 80px;
+		.quates {
+			font-size: 40px;
+			font-weight: 900;
+		}
+		.inner {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 20px;
+			.title {
+				font-size: 25px;
+				font-weight: 700;
+				line-height: 130%; /* 32.5px */
+			}
+			.date {
+				line-height: 130%; /* 26px */
+			}
+		}
+		.stars {
+			margin-bottom: 40px;
+		}
+		.text {
+			max-width: 1058.698px;
+			line-height: 130%; /* 26px */
+		}
+	}
+	.bottom {
+		padding: 25px 80px;
+		background-color: #fff7e1;
+		display: flex;
+		gap: 50px;
+		.icon {
+			img {
+				border-radius: 50%;
+			}
+		}
+		.name {
+			font-weight: 700;
+			line-height: 130%; /* 26px */
+			margin-bottom: 15px;
+		}
+		.city {
+			line-height: 130%; /* 26px */
+		}
+	}
+}
