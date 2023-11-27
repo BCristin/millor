@@ -1,0 +1,58 @@
+@import '../../var';
+.topCatalogCoffe {
+	padding: 34px 0 146px;
+	// background-color: $main-color;
+	position: relative;
+	&::before {
+		content: '';
+		background-image: url(../../assets/images/catalog-page/decor.png);
+		background-repeat: no-repeat;
+		left: 1026px;
+		height: 562px;
+		width: 100%;
+		position: absolute;
+		top: -47px;
+		z-index: 5;
+	}
+	&::after {
+		content: '';
+		position: absolute;
+		mask: url(../../assets/images/catalog-page/bg.png);
+		background-repeat: no-repeat;
+		mask-repeat: no-repeat;
+		background-position-x: center;
+
+		background-color: $main-color;
+		height: 180%;
+
+		width: 100%;
+		top: 0;
+		z-index: -1;
+	}
+
+	h1 {
+		color: #fff;
+		font-family: Gilroy;
+		font-size: 70px;
+		font-style: normal;
+		font-weight: 900;
+		line-height: normal;
+		padding-left: 10px;
+	}
+	a,
+	span {
+		color: #fff;
+
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+	.breadcrumbs {
+		margin-bottom: 131px;
+		margin-left: 10px;
+	}
+}

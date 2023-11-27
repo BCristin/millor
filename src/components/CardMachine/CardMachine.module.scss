@@ -1,0 +1,15 @@
+@import '../CardTea/CardTea.module.scss';
+
+.card__bottom {
+	margin-top: 22px;
+	button {
+		width: 100%;
+	}
+}
+.card {
+	img {
+		margin-top: 45px;
+		width: 320px;
+		height: 250px;
+	}
+}

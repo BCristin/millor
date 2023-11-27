@@ -6,18 +6,22 @@ import styles from './Modal.module.scss';
 export const Modal = ({
 	children,
 	setIsOpen,
-	setIsOpenSecondModal,
 	leftTitle,
 	leftText,
 	leftBtnText,
 	rightBtnText,
 	rightAText,
+	setIsOpenSecondModal,
 	setIsOpenLink,
 	setIsOpenSucces,
 }) => {
 	const handlerbtnRight = (e) => {
 		e.preventDefault();
-		if (setIsOpenSucces) setIsOpenSucces(true);
+
+		if (setIsOpenSucces) {
+			setIsOpen(false);
+			setIsOpenSucces(true);
+		}
 	};
 	const handlerbtnLeft = (e) => {
 		setIsOpen(false);

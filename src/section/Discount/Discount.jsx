@@ -2,7 +2,7 @@ import { useCallback, useState } from 'react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { CardDiscound } from '../../components/CardDiscound/CardDiscound';
+import { CardCoffe } from '../../components/CardCoffe/CardCoffe';
 import { SeeAll } from '../../components/SeeAll/SeeAll';
 import { Title } from '../../components/Title/Title';
 import styles from './Discount.module.scss';
@@ -33,22 +33,22 @@ export const Discount = () => {
 					loop={true}
 					centeredSlides={true}>
 					<SwiperSlide>
-						<CardDiscound />
+						<CardCoffe />
 					</SwiperSlide>
 					<SwiperSlide>
-						<CardDiscound />
+						<CardCoffe />
 					</SwiperSlide>
 					<SwiperSlide>
-						<CardDiscound />
+						<CardCoffe />
 					</SwiperSlide>
 					<SwiperSlide>
-						<CardDiscound />
+						<CardCoffe />
 					</SwiperSlide>
 					<SwiperSlide>
-						<CardDiscound />
+						<CardCoffe />
 					</SwiperSlide>
 					<SwiperSlide>
-						<CardDiscound />
+						<CardCoffe />
 					</SwiperSlide>
 				</Swiper>
 				<div className={styles.next} onClick={handleNext}></div>

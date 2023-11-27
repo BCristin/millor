@@ -4,7 +4,7 @@ import styles from './Select.module.scss';
 
 export const Select = () => {
 	const [open, setOpen] = useState(false);
-	const options = ['250 г.', '500 г.', '1000 г.'];
+	const options = ['100 г.', '250 г.', '500 г.', '1000 г.'];
 	const [seletedOption, setSeletedOption] = useState(options[0]);
 
 	return (

@@ -1,0 +1,56 @@
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+
+	gap: 20px;
+
+	.card {
+		flex-basis: calc(25% - 20px);
+		font-size: 25px;
+		font-weight: 700;
+
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		// justify-content: space-between;
+
+		width: 400px;
+		height: 320px;
+		padding: 30px 34px 40px;
+
+		text-align: center;
+
+		border-radius: 20px;
+		background: #fff;
+		box-shadow: 0px 0px 30px 0px rgba(149, 149, 149, 0.25);
+
+		gap: 16px;
+
+		img {
+			width: fit-content;
+			max-height: 200px;
+		}
+	}
+
+	.invisibleCard {
+		position: relative;
+
+		width: 400px;
+		height: 320px;
+
+		// visibility: hidden;
+
+		.decor {
+			position: absolute;
+			bottom: -20px;
+			left: -90px;
+
+			width: 819px;
+		}
+	}
+}
+
+.sortSelect {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
