@@ -8,7 +8,6 @@ export const ProductClasificationBtn = ({ titles }) => {
 		const handleScroll = () => {
 			// Logica pentru elementul "sticky" din mijlocul paginii
 			setIsSectionSticky(window.scrollY > sectionRef.current.offsetTop - 16);
-			console.log(window.scrollY, sectionRef.current.offsetTop);
 		};
 
 		window.addEventListener('scroll', handleScroll);
