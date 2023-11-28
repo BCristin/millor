@@ -2,10 +2,10 @@
 
 .reviews {
 	position: relative;
-	z-index: -2;
+	z-index: 0;
 
 	background-color: #f5f5f5;
-
+	scroll-margin-top: 284px;
 	&::before {
 		position: absolute;
 		z-index: -1;
