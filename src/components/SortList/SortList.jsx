@@ -3,12 +3,12 @@ import { useState } from 'react';
 import { InputRadioList } from '../InputRadioList/InputRadioList';
 import styles from './SortList.module.scss';
 
-export const SortList = ({ title, option, defaultSelect = '', className }) => {
+export const SortList = ({ title = null, option, defaultSelect = '', className }) => {
 	const [checkedValue, setCheckedValue] = useState(option[defaultSelect - 1]);
 
 	return (
 		<div className={classNames(styles['sort-list'], className)}>
-			<div className={styles.title}> {title}</div>
+			{title && <div className={styles.title}>{title}</div>}
 			{option.map((value) => (
 				<InputRadioList
 					key={value}

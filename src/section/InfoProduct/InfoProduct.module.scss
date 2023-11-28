@@ -1,30 +1,5 @@
 @import '../../var';
 .info {
-	.buttons {
-		display: flex;
-		justify-content: space-between;
-
-		gap: 20px;
-		margin-bottom: 100px;
-		button {
-			padding: 15px;
-			border-radius: 5px;
-			border: 1px solid #c9c9c9;
-			background: #f6f6f6;
-			color: #f9b300;
-			text-align: center;
-			font-family: Gilroy;
-			font-size: 25px;
-			font-style: normal;
-			font-weight: 600;
-			line-height: normal;
-			width: 100%;
-		}
-		.active {
-			border: 1px solid #f9b300;
-			background: #fff7e1;
-		}
-	}
 	.inner {
 		display: flex;
 		gap: 20px;
@@ -192,4 +167,9 @@
 	font-weight: 500;
 	line-height: 130%; /* 32.5px */
 	max-width: 1380px;
+}
+.desciption,
+.how_to_cook,
+.additionally {
+	scroll-margin-top: 284px;
 }

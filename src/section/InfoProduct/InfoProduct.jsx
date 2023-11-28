@@ -1,22 +1,15 @@
 import img from '../../assets/images/product/info.jpg';
 import img2 from '../../assets/images/product/info2.jpg';
 import img3 from '../../assets/images/product/info3.jpg';
-
 import { Ways } from '../../components/Ways/Ways';
 import styles from './InfoProduct.module.scss';
 
 export const InfoProduct = () => {
 	return (
 		<>
-			<div className={styles.desciption}>
+			<div className={styles.desciption} id="desciption">
 				<div className={'container'}>
 					<div className={styles.info}>
-						<div className={styles.buttons}>
-							<button className={styles.active}>Описание</button>
-							<button>Как готовить?</button>
-							<button>Дополнительно</button>
-							<button>Отзывы</button>
-						</div>
 						<div className={styles.inner}>
 							<div className={styles.gust}>
 								<div className={styles.title}>Вкус</div>
@@ -125,9 +118,9 @@ export const InfoProduct = () => {
 									<path
 										d="M45 45L34.6083 34.6083M40.2222 21.1111C40.2222 31.6659 31.6659 40.2222 21.1111 40.2222C10.5563 40.2222 2 31.6659 2 21.1111C2 10.5563 10.5563 2 21.1111 2C31.6659 2 40.2222 10.5563 40.2222 21.1111Z"
 										stroke="white"
-										stroke-width="3"
-										stroke-linecap="round"
-										stroke-linejoin="round"
+										strokeWidth="3"
+										strokeLinecap="round"
+										strokeLinejoin="round"
 									/>
 								</svg>
 							</div>
@@ -135,7 +128,7 @@ export const InfoProduct = () => {
 					</div>
 				</div>
 
-				<div className={styles.how_to_cook}>
+				<div className={styles.how_to_cook} id="how_to_cook">
 					<div className={'container'}>
 						<h3 className={styles.title}>Как готовить?</h3>
 						<div className={styles.cards}>
@@ -339,7 +332,7 @@ export const InfoProduct = () => {
 					</div>
 				</div>
 				<div className={'container'}>
-					<div className={styles.additionally}>
+					<div className={styles.additionally} id="additionally">
 						<h3 className={styles.title}>Дополнительно</h3>
 						<div className={styles.text}>
 							Разнообразный и богатый опыт новая модель организационной деятельности позволяет
