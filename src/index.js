@@ -9,6 +9,7 @@ import { CatalogMachine } from './pages/CatalogMachine';
 import { CatalogTea } from './pages/CatalogTea';
 
 import { Blog } from './pages/Blog';
+import { Contacts } from './pages/Contacts';
 import { Home } from './pages/Home';
 import { NotFound } from './pages/NotFound';
 import { Product } from './pages/Product';
@@ -25,7 +26,7 @@ root.render(
 					<Route path="/machine" element={<CatalogMachine />} />
 					<Route path="/cereal" element={<CatalogCereal />} />
 					<Route path="/blog" element={<Blog />} />
-					<Route path="/contact" element={<Blog />} />
+					<Route path="/contact" element={<Contacts />} />
 
 					<Route path="/cereal/:id" element={<Product />} />
 					<Route path="*" element={<NotFound />} />
