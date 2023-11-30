@@ -8,6 +8,8 @@ const linksInfo = [
 	{ name: 'Чай и кофейные напитки', link: 'tea', optionlink: true },
 	{ name: 'Продукция для вендинга', link: 'machine', optionlink: true },
 	{ name: 'Здоровое питание', link: 'cereal', optionlink: true },
+	{ name: 'Блог', link: 'blog', optionlink: false },
+	{ name: 'Контакты', link: 'contact', optionlink: false },
 ];
 
 const Breadcrumbs = ({ className }) => {
