@@ -6,7 +6,7 @@ import styles from './InfoProduct.module.scss';
 export const Additionally = () => {
 	return (
 		<div className={'container'}>
-			<div className={styles.additionally} id="additionally">
+			<section className={styles.additionally} id="additionally">
 				<h3 className={styles.title}>Дополнительно</h3>
 				<div className={styles.text}>
 					Разнообразный и богатый опыт новая модель организационной деятельности позволяет оценить
@@ -63,7 +63,7 @@ export const Additionally = () => {
 					финансовых и административных условий.
 				</div>
 				<img src={img3} alt="" />
-			</div>
+			</section>
 		</div>
 	);
 };

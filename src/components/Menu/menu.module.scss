@@ -34,6 +34,9 @@
 	}
 }
 
+.active {
+	border-bottom: 3px solid $main-color;
+}
 .cart {
 	display: flex;
 	gap: 53px;

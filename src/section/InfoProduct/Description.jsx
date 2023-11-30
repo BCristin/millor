@@ -1,9 +1,8 @@
 import styles from './InfoProduct.module.scss';
 
 export const Description = ({ data, img, isCoffe }) => {
-	console.log(img);
 	return (
-		<div className={styles.desciption} id="desciption">
+		<section className={styles.desciption} id="desciption">
 			<div className={'container'}>
 				<div className={styles.info}>
 					{isCoffe && (
@@ -86,6 +85,6 @@ export const Description = ({ data, img, isCoffe }) => {
 					)}
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };

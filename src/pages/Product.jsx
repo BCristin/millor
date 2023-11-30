@@ -35,13 +35,35 @@ export const Product = () => {
 
 	if (isCoffe) btns.splice(-1, 0, { name: 'Дополнительно', link: '#additionally' });
 
+	const [activeSection, setActiveSection] = useState('');
+	useEffect(() => {
+		const handleScroll = () => {
+			const scrollPosition = window.scrollY + 285; // Ajustează după nevoie
+			const sections = document.querySelectorAll('section');
+
+			sections.forEach((section) => {
+				const sectionTop = section.offsetTop;
+				const sectionBottom = sectionTop + section.offsetHeight;
+
+				if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+					setActiveSection(section.id);
+				}
+			});
+		};
+
+		window.addEventListener('scroll', handleScroll);
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
+	}, []);
+
 	if (!product) {
 		return <div className="container">Loading...</div>;
 	}
 	return (
 		<>
 			<CardProductBig data={product} />
-			<ProductClasificationBtn titles={btns}></ProductClasificationBtn>
+			<ProductClasificationBtn titles={btns} active={activeSection}></ProductClasificationBtn>
 			<Description
 				data={product.description}
 				img={product.internal || product.img}

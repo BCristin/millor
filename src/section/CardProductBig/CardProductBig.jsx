@@ -7,7 +7,7 @@ import styles from './CardProductBig.module.scss';
 
 export const CardProductBig = ({ data }) => {
 	return (
-		<section className={styles.card__product__big}>
+		<div className={styles.card__product__big}>
 			<div className={'container'}>
 				<Breadcrumbs className={styles.breadcrumbs}></Breadcrumbs>
 				<div className={styles.card}>
@@ -175,6 +175,6 @@ export const CardProductBig = ({ data }) => {
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
 	);
 };

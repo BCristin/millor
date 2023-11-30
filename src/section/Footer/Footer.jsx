@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import logo from '../../assets/images/logo.png';
 import styles from '../../components/Menu/menu.module.scss';
 
@@ -9,19 +10,19 @@ export const Footer = () => {
 					<img src={logo} alt="logo" className={styles.logo} />
 					<ul className={styles.nav__list}>
 						<li>
-							<a className={styles.nav__link} href="#!">
+							<Link to={{ pathname: '/', hash: '#catalog' }} className={styles.nav__link}>
 								Каталог товаров
-							</a>
+							</Link>
 						</li>
 						<li>
-							<a className={styles.nav__link} href="#!">
+							<Link to="/blog" className={styles.nav__link}>
 								Блог
-							</a>
+							</Link>
 						</li>
 						<li>
-							<a className={styles.nav__link} href="#!">
+							<Link to="/contact" className={styles.nav__link}>
 								Контакты
-							</a>
+							</Link>
 						</li>
 					</ul>
 				</nav>
