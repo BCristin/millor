@@ -16,7 +16,7 @@ export const CardProductBig = ({ data }) => {
 						{data.type !== 'cereal' && (
 							<img
 								className={classNames(styles.internal, {
-									[styles.internal__bottom]: !data.isCoffe,
+									[styles.internal__bottom]: data.type === 'tea',
 								})}
 								src={data.internal}
 								alt=""
