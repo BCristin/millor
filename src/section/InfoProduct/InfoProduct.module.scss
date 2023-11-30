@@ -85,7 +85,7 @@
 	.text__photo {
 		display: flex;
 		gap: 160px;
-		margin-bottom: 100pxsss;
+		margin-bottom: 100px;
 		.text {
 			max-width: 1100px;
 			color: #222;
@@ -96,9 +96,11 @@
 			line-height: 130%; /* 32.5px */
 		}
 		.img {
-			max-width: 397px;
-			max-height: 418px;
+			width: 400px;
+			height: 400px;
 			position: relative;
+			overflow: hidden;
+			border-radius: 20px;
 
 			img {
 				width: 100%;
@@ -107,7 +109,8 @@
 				// background: lightgray 50% / cover no-repeat;
 				object-fit: cover;
 				&:hover {
-					object-fit: none;
+					// object-fit: none;
+					transform: scale(3);
 				}
 			}
 			svg {
@@ -123,13 +126,6 @@
 	padding-top: 50px;
 	padding-bottom: 100px;
 	border: 1px solid #b3b3b3;
-	.title {
-		margin-bottom: 60px;
-	}
-	.cards {
-		display: flex;
-		gap: 21px;
-	}
 }
 
 .additionally {
@@ -148,6 +144,7 @@
 	font-style: normal;
 	font-weight: 900;
 	line-height: normal;
+	margin-bottom: 60px;
 }
 .title_second {
 	color: #000;
@@ -156,9 +153,10 @@
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
+	margin-bottom: 100px;
 }
 .text {
-	margin-top: 60px;
+	// margin-top: 60px;
 	margin-bottom: 70px;
 	color: #222;
 	font-family: Gilroy;

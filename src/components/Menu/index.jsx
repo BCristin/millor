@@ -1,6 +1,6 @@
 import cn from 'classnames';
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import cart from '../../assets/icon/cart.svg';
 import search from '../../assets/icon/search.svg';
 import user from '../../assets/icon/user.svg';
@@ -11,6 +11,7 @@ import styles from './menu.module.scss';
 export const Menu = ({ setIsOpen }) => {
 	const [visibleInput, setVisibleInput] = useState(false);
 	const [isAtTop, setIsAtTop] = useState(true);
+	const active = useLocation().pathname.slice(1);
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -34,19 +35,25 @@ export const Menu = ({ setIsOpen }) => {
 					</Link>
 					<ul className={cn(styles.nav__list, { [styles.invisible]: visibleInput })}>
 						<li>
-							<Link className={styles.nav__link} to={{ pathname: '/', hash: '#catalog' }}>
+							<Link
+								className={cn(styles.nav__link, { [styles.active]: active === 'catalog' })}
+								to={{ pathname: '/', hash: '#catalog' }}>
 								Каталог товаров
 							</Link>
 						</li>
 						<li>
-							<a className={styles.nav__link} href="#!">
+							<Link
+								to="/blog"
+								className={cn(styles.nav__link, { [styles.active]: active === 'blog' })}>
 								Блог
-							</a>
+							</Link>
 						</li>
 						<li>
-							<a className={styles.nav__link} href="#!">
+							<Link
+								to="/contact"
+								className={cn(styles.nav__link, { [styles.active]: active === 'contact' })}>
 								Контакты
-							</a>
+							</Link>
 						</li>
 					</ul>
 					<div className={cn(styles.input__inner, { [styles.visible]: visibleInput })}>

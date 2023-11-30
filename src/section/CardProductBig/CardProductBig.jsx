@@ -7,7 +7,7 @@ import styles from './CardProductBig.module.scss';
 
 export const CardProductBig = ({ data }) => {
 	return (
-		<section className={styles.card__product__big}>
+		<div className={styles.card__product__big}>
 			<div className={'container'}>
 				<Breadcrumbs className={styles.breadcrumbs}></Breadcrumbs>
 				<div className={styles.card}>
@@ -16,7 +16,7 @@ export const CardProductBig = ({ data }) => {
 						{data.type !== 'cereal' && (
 							<img
 								className={classNames(styles.internal, {
-									[styles.internal__bottom]: !data.isCoffe,
+									[styles.internal__bottom]: data.type === 'tea',
 								})}
 								src={data.internal}
 								alt=""
@@ -175,6 +175,6 @@ export const CardProductBig = ({ data }) => {
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
 	);
 };

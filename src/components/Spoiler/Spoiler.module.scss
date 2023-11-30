@@ -1,0 +1,31 @@
+.spoiler {
+	border-radius: 20px;
+	background: #fff;
+	box-shadow: 0px 0px 30px 0px rgba(149, 149, 149, 0.25);
+	padding: 39px 34px 39px 50px;
+	margin-bottom: 30px;
+
+	.name {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 30px;
+		.title {
+			font-size: 25px;
+			font-weight: 600;
+			line-height: 130%; /* 32.5px */
+		}
+	}
+	.text {
+		padding-top: 40px;
+		padding-bottom: 11px;
+		color: #222;
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 130%; /* 26px */
+	}
+	.icon {
+		width: 25px;
+		height: 25px;
+	}
+}

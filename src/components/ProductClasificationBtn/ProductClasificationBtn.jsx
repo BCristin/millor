@@ -1,7 +1,7 @@
 import cn from 'classnames';
 import { useEffect, useRef, useState } from 'react';
 import styles from './ProductClasificationBtn.module.scss';
-export const ProductClasificationBtn = ({ titles }) => {
+export const ProductClasificationBtn = ({ titles, active }) => {
 	const sectionRef = useRef(null);
 	const [isSectionSticky, setIsSectionSticky] = useState(false);
 	useEffect(() => {
@@ -13,10 +13,14 @@ export const ProductClasificationBtn = ({ titles }) => {
 		window.addEventListener('scroll', handleScroll);
 
 		return () => {
-			// Cleanup listener la dezmontarea componentei
 			window.removeEventListener('scroll', handleScroll);
 		};
 	}, []);
+
+	if (!active) {
+		active = titles[0].link.slice(1);
+	}
+
 	return (
 		<>
 			<div ref={sectionRef} className={styles.not_exist}></div>
@@ -24,7 +28,10 @@ export const ProductClasificationBtn = ({ titles }) => {
 				<div className={'container'}>
 					<div className={styles.buttons}>
 						{titles.map((title, index) => (
-							<a href={title.link} key={index} className={cn({ [styles.active]: index === 0 })}>
+							<a
+								href={title.link}
+								key={index}
+								className={cn({ [styles.active]: title.link === '#' + active })}>
 								{title.name}
 							</a>
 						))}
