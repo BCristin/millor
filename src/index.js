@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom';
 import './global.scss';
 import { MainLayout } from './layout/MainLayout';
 import { CatalogCereal } from './pages/CatalogCereal';
@@ -15,9 +15,19 @@ import { NotFound } from './pages/NotFound';
 import { Product } from './pages/Product';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const ScrollToTop = () => {
+	const navigate = useNavigate();
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [navigate]);
+
+	return null;
+};
+
 root.render(
 	<React.StrictMode>
 		<BrowserRouter>
+			<ScrollToTop />
 			<Routes>
 				<Route path="/" element={<MainLayout />}>
 					<Route path="/" element={<Home />} />
