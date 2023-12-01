@@ -9,9 +9,9 @@ export const SortList = ({ title = null, option, defaultSelect = '', className }
 	return (
 		<div className={classNames(styles['sort-list'], className)}>
 			{title && <div className={styles.title}>{title}</div>}
-			{option.map((value) => (
+			{option.map((value, index) => (
 				<InputRadioList
-					key={value}
+					key={index}
 					name={title}
 					checkedValue={checkedValue}
 					setCheckedValue={setCheckedValue}>

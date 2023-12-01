@@ -1,3 +1,4 @@
+import cn from 'classnames';
 import { useState } from 'react';
 import styles from './Contact.module.scss';
 
@@ -10,12 +11,12 @@ export const Contact = () => {
 				<div className={styles.buttons}>
 					<button
 						onClick={() => setActiveSection(1)}
-						className={activeSection === 1 && styles.active}>
+						className={cn({ [styles.active]: activeSection === 1 })}>
 						Контакты
 					</button>
 					<button
 						onClick={() => setActiveSection(2)}
-						className={activeSection === 2 && styles.active}>
+						className={cn({ [styles.active]: activeSection === 2 })}>
 						Наши магазины
 					</button>
 				</div>

@@ -15,7 +15,10 @@ export const Product = () => {
 	useEffect(() => {
 		async function getProduct() {
 			try {
-				const json = await ky.get(`http://192.168.0.36:3001/product/${id}`).json();
+				const json = await ky
+					.get(`https://6568d55b9927836bd9757ce4.mockapi.io/product/${id}`)
+					// .get(`http://192.168.0.36:3001/product/${id}`).json();
+					.json();
 				setProduct(json);
 			} catch (error) {
 				console.log(error);

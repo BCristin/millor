@@ -1,0 +1,68 @@
+@import '../../var';
+.personal__promo {
+	margin-bottom: 50px;
+	position: relative;
+	&::after {
+		content: '';
+
+		position: absolute;
+		z-index: -1;
+		// bottom: 100px;
+
+		display: block;
+
+		width: 100%;
+		height: 131%;
+
+		background-image: url(../../assets/images/cart/bg_bottom.svg);
+		background-repeat: no-repeat;
+		background-position-x: center;
+		top: 140px;
+	}
+	&::before {
+		content: '';
+
+		position: absolute;
+		z-index: -1;
+		bottom: -466px;
+
+		display: block;
+
+		width: 100%;
+		height: 100%;
+
+		background-color: $main-color;
+		mask: url(../../assets/images/catalog-page/mask.svg);
+		mask-position: center;
+		mask-repeat: no-repeat;
+	}
+}
+
+.title {
+	color: #222;
+	font-weight: 900;
+	font-size: 30px;
+	margin-bottom: 40px;
+}
+.cards {
+	display: flex;
+	justify-content: space-between;
+}
+.card {
+	width: 400px;
+	height: 449px;
+	color: #fff;
+	padding: 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	&__title {
+		margin-top: 50%;
+		font-size: 30px;
+		font-weight: 700;
+	}
+	&__endpromo {
+		font-size: 20px;
+		font-weight: 500;
+	}
+}

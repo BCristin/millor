@@ -47,9 +47,11 @@ export const Modal = ({
 				<form className={styles.modal__right}>
 					<img src={logo} alt="" />
 					{children}
+
 					<button type="submit" onClick={handlerbtnRight}>
 						{rightBtnText}
 					</button>
+
 					<a href="#!" onClick={handleLink}>
 						{rightAText}
 					</a>
