@@ -1,4 +1,4 @@
-// Breadcrumbs.jsx
+import cn from 'classnames';
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import styles from './Breadcrumbs.module.scss';
@@ -10,6 +10,7 @@ const linksInfo = [
 	{ name: 'Здоровое питание', link: 'cereal', optionlink: true },
 	{ name: 'Блог', link: 'blog', optionlink: false },
 	{ name: 'Контакты', link: 'contact', optionlink: false },
+	{ name: 'Корзина', link: 'cart', optionlink: false },
 ];
 
 const Breadcrumbs = ({ className }) => {
@@ -28,7 +29,7 @@ const Breadcrumbs = ({ className }) => {
 	);
 
 	return (
-		<div className={className}>
+		<div className={cn(styles.breadcrumbs, className)}>
 			<Link to="/">Главная</Link>
 
 			{pathnames.map((name, index) => {

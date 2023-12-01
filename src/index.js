@@ -1,28 +1,21 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { ScrollToTop } from './components/ScrollToTop';
 import './global.scss';
 import { MainLayout } from './layout/MainLayout';
+import { Blog } from './pages/Blog';
+import { Cart } from './pages/Cart';
 import { CatalogCereal } from './pages/CatalogCereal';
 import { CatalogCoffe } from './pages/CatalogCoffe';
 import { CatalogMachine } from './pages/CatalogMachine';
 import { CatalogTea } from './pages/CatalogTea';
-
-import { Blog } from './pages/Blog';
 import { Contacts } from './pages/Contacts';
 import { Home } from './pages/Home';
 import { NotFound } from './pages/NotFound';
 import { Product } from './pages/Product';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-const ScrollToTop = () => {
-	const navigate = useNavigate();
-	useEffect(() => {
-		window.scrollTo(0, 0);
-	}, [navigate]);
-
-	return null;
-};
 
 root.render(
 	<React.StrictMode>
@@ -37,6 +30,7 @@ root.render(
 					<Route path="/cereal" element={<CatalogCereal />} />
 					<Route path="/blog" element={<Blog />} />
 					<Route path="/contact" element={<Contacts />} />
+					<Route path="/cart" element={<Cart />} />
 
 					<Route path="/cereal/:id" element={<Product />} />
 					<Route path="*" element={<NotFound />} />

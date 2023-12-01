@@ -69,9 +69,9 @@ export const Menu = ({ setIsOpen }) => {
 							/>
 						</li>
 						<li>
-							<a href="#!">
+							<Link to="/cart">
 								<img src={cart} alt="cart" />
-							</a>
+							</Link>
 						</li>
 						<li>
 							<a href="#!">
