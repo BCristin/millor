@@ -14,6 +14,7 @@ import { Contacts } from './pages/Contacts';
 import { Home } from './pages/Home';
 import { NotFound } from './pages/NotFound';
 import { Product } from './pages/Product';
+import { User } from './pages/User';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -31,6 +32,7 @@ root.render(
 					<Route path="/blog" element={<Blog />} />
 					<Route path="/contact" element={<Contacts />} />
 					<Route path="/cart" element={<Cart />} />
+					<Route path="/user" element={<User />} />
 
 					<Route path="/cereal/:id" element={<Product />} />
 					<Route path="*" element={<NotFound />} />
