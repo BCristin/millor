@@ -73,7 +73,7 @@
 		border-radius: 5px;
 		border: 1px solid #c9c9c9;
 		background: #f6f6f6;
-		color: #f9b300;
+		color: $main-color;
 		text-align: center;
 
 		font-size: 25px;
@@ -83,7 +83,7 @@
 		width: 100%;
 	}
 	.active {
-		border: 1px solid #f9b300;
+		border: 1px solid $main-color;
 		background: #fff7e1;
 	}
 }

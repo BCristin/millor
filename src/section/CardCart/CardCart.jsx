@@ -28,8 +28,8 @@ export const CardCart = () => {
 								height="25"
 								viewBox="0 0 25 25"
 								fill="none">
-								<path d="M2 2L23 23" stroke="#F9B300" strokeWidth="3" strokeLinecap="round" />
-								<path d="M23 2L2 23" stroke="#F9B300" strokeWidth="3" strokeLinecap="round" />
+								<path d="M2 2L23 23" strokeWidth="3" strokeLinecap="round" />
+								<path d="M23 2L2 23" strokeWidth="3" strokeLinecap="round" />
 							</svg>
 							<div className={styles.product}>
 								<div className={styles.img}>
@@ -53,8 +53,8 @@ export const CardCart = () => {
 								height="25"
 								viewBox="0 0 25 25"
 								fill="none">
-								<path d="M2 2L23 23" stroke="#F9B300" strokeWidth="3" strokeLinecap="round" />
-								<path d="M23 2L2 23" stroke="#F9B300" strokeWidth="3" strokeLinecap="round" />
+								<path d="M2 2L23 23" strokeWidth="3" strokeLinecap="round" />
+								<path d="M23 2L2 23" strokeWidth="3" strokeLinecap="round" />
 							</svg>
 							<div className={styles.product}>
 								<div className={styles.img}>

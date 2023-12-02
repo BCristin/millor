@@ -83,6 +83,11 @@
 				border-radius: 20px;
 				border: 1px solid #f0f0f0;
 				background: #fcfcfc;
+
+				path {
+					stroke: $main-color;
+				}
+
 				.product {
 					margin-left: calc(142px - 55px);
 					display: flex;

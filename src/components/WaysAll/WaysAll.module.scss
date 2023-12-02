@@ -1,3 +1,5 @@
+@import '../../var';
+
 .cards {
 	ul {
 		display: flex;
@@ -41,7 +43,7 @@
 }
 :global {
 	.react-tabs__tab--selected div {
-		background: #f9b300;
+		background: $main-color;
 		color: #fff;
 		path {
 			fill: #fff;
