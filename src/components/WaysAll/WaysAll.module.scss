@@ -6,8 +6,6 @@
 		gap: 21px;
 	}
 	.title {
-		color: #000;
-
 		font-size: 40px;
 		font-style: normal;
 		font-weight: 900;
@@ -15,8 +13,6 @@
 		margin-top: 110px;
 		margin-bottom: 60px;
 		&__second {
-			color: #000;
-
 			font-size: 30px;
 			font-style: normal;
 			font-weight: 700;
@@ -27,8 +23,7 @@
 	.text {
 		max-width: 1380px;
 		color: #222;
-		font-family: Gilroy;
-		font-size: 25px;
+
 		font-style: normal;
 		font-weight: 500;
 		line-height: 130%; /* 32.5px */

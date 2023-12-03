@@ -86,10 +86,9 @@
 		input {
 			border: none;
 			background: none;
-			width: 80%;
+			width: 78%;
 			&::placeholder {
 				color: #222;
-				font-family: 'Gilroy';
 				font-size: 20px;
 				font-style: normal;
 				font-weight: 500;
@@ -134,7 +133,6 @@
 			}
 		}
 		.up_discount {
-			color: #000;
 			font-weight: 500;
 		}
 		position: relative;
@@ -146,8 +144,7 @@
 			background-color: #fff;
 			width: 33px;
 			height: 33px;
-			color: #000;
-			font-size: 25px;
+
 			text-align: center;
 			font-weight: 600;
 			z-index: 2;
@@ -168,7 +165,6 @@
 	border-radius: 20px;
 	padding: 60px;
 
-	color: #000;
 	font-size: 16px;
 	font-weight: 700;
 
