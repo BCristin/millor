@@ -10,7 +10,7 @@ import styles from './Instagram.module.scss';
 export const Instagram = () => {
 	return (
 		<div className={styles.instagram}>
-			<div className="container">
+			<div className={'container'}>
 				<div className={styles.instagram__inner}>
 					<Title className={styles.title}>Мы в Instagram</Title>
 					<div className={styles.instagram__content}>

@@ -7,7 +7,7 @@ import styles from './News.module.scss';
 export const News = () => {
 	return (
 		<div className={styles.news}>
-			<div className="container">
+			<div className={'container'}>
 				<div className={styles.news__inner}>
 					<div className={styles.news__top}>
 						<Title className={styles.title}>Новости компании</Title>

@@ -30,7 +30,7 @@ const Breadcrumbs = ({ className, bgcolor = 'none' }) => {
 
 	return (
 		<div className={className} style={{ backgroundColor: bgcolor }}>
-			<div className="container">
+			<div className={'container'}>
 				<div className={styles.breadcrumbs}>
 					<Link to="/">Главная</Link>
 

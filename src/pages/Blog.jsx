@@ -38,7 +38,7 @@ export const Blog = () => {
 
 	return (
 		<>
-			<div className="container">
+			<div className={'container'}>
 				<Breadcrumbs className={styles.breadcrumbs} />
 			</div>
 			<ProductClasificationBtn titles={btns} active={activeSection} />

@@ -61,7 +61,7 @@ export const Product = () => {
 	}, []);
 
 	if (!product) {
-		return <div className="container">Loading...</div>;
+		return <div className={'container'}>Loading...</div>;
 	}
 	return (
 		<>

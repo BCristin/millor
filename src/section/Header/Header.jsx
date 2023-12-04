@@ -10,7 +10,7 @@ export const Header = ({ setIsOpen }) => {
 	return (
 		<>
 			<header className={styles.header} id="top">
-				<div className="container">
+				<div className={'container'}>
 					<div className={styles.header__inner}>
 						<Swiper
 							spaceBetween={50}

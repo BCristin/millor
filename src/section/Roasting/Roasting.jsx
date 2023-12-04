@@ -5,7 +5,7 @@ import styles from './Roasting.module.scss';
 export const Roasting = () => {
 	return (
 		<div className={styles.roasting}>
-			<div className="container">
+			<div className={'container'}>
 				<div className={styles.roasting__inner}>
 					<Title className={styles.title}>Как мы обжариваем наш кофе:</Title>
 					<div className={styles.p}>

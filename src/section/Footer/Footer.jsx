@@ -5,7 +5,7 @@ import styles from '../../components/Menu/menu.module.scss';
 export const Footer = () => {
 	return (
 		<div className={styles.menu}>
-			<div className="container">
+			<div className={'container'}>
 				<nav className={styles.nav}>
 					<img src={logo} alt="logo" className={styles.logo} />
 					<ul className={styles.nav__list}>

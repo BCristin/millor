@@ -5,7 +5,7 @@ import styles from './Subscribe.module.scss';
 export const Subscribe = () => {
 	return (
 		<div className={styles.subscribe}>
-			<div className="container">
+			<div className={'container'}>
 				<Title className={styles.title}>Подписка на новости и рассылку</Title>
 				<div className={styles.p}>
 					Подпишитесь на нашу рассылку прямо сейчас и будьте в курсе новых поставок, скидок и
