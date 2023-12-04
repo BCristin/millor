@@ -5,7 +5,7 @@ import styles from '../section/CardProductBig/CardProductBig.module.scss';
 export const Contacts = () => {
 	return (
 		<>
-			<div className="container">
+			<div className={'container'}>
 				<Breadcrumbs className={styles.breadcrumbs} />
 			</div>
 

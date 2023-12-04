@@ -4,7 +4,7 @@ import styles from './Benefits.module.scss';
 export const Benefits = () => {
 	return (
 		<div className={styles.benefits}>
-			<div className="container">
+			<div className={'container'}>
 				<div className={styles.benefits__inner}>
 					<div className={styles.img}>
 						<img src={benefitDecor} alt="" />

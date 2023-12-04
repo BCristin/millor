@@ -25,7 +25,7 @@ export const Home = () => {
 	return (
 		<>
 			<Header></Header>
-			<div className="container">
+			<div className={'container'}>
 				<Catalog></Catalog>
 				<Discount></Discount>
 			</div>
