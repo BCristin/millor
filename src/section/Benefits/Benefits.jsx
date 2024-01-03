@@ -101,7 +101,7 @@ export const Benefits = () => {
 										Благодаря крупным объемам производства мы даем лучшие цены на нашу продукцию
 									</p>
 								</div>
-							</div>{' '}
+							</div>
 							<div className={styles.card}>
 								<div className={styles.icon}>
 									<svg

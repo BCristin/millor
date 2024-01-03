@@ -50,3 +50,14 @@
 		background-color: #40241d;
 	}
 }
+
+@media (max-width: 1350px) {
+	.title {
+		font-size: 56px;
+		margin-bottom: 41px;
+	}
+	.text {
+		max-width: 466px;
+		margin-bottom: 58px;
+	}
+}

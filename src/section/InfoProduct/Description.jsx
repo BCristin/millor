@@ -43,7 +43,7 @@ export const Description = ({ data, img, isCoffe }) => {
 								<div className={styles.card}>
 									<div className={styles.card__title}>Способ обработки: </div>
 									<div className={styles.card__desc}>{data.characteristics.processing}</div>
-								</div>{' '}
+								</div>
 								<div className={styles.card}>
 									<div className={styles.card__title}>Вид кофе:</div>
 									<div className={styles.card__desc}>{data.characteristics.type}</div>

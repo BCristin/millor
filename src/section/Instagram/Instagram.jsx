@@ -42,10 +42,10 @@ export const Instagram = () => {
 								</SwiperSlide>
 								<SwiperSlide>
 									<img src={imgSlider} alt="" />
-								</SwiperSlide>{' '}
+								</SwiperSlide>
 								<SwiperSlide>
 									<img src={imgSlider} alt="" />
-								</SwiperSlide>{' '}
+								</SwiperSlide>
 								<SwiperSlide>
 									<img src={imgSlider} alt="" />
 								</SwiperSlide>

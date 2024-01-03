@@ -76,3 +76,16 @@
 		height: 22px;
 	}
 }
+
+@media (max-width: 1000px) {
+	.input {
+		border-radius: 20px;
+		padding: 22px;
+		padding-left: 84px;
+	}
+	.icon__search {
+		top: 20px;
+		width: 24px;
+		height: 24px;
+	}
+}

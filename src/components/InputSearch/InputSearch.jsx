@@ -31,10 +31,10 @@ export const InputSearch = ({ setVisibleInput }) => {
 			/>
 			{result > 0 && (
 				<div className={styles.result}>
-					<div className={styles.result__item}>Ячменный напиток Millor - Здоровое питание</div>{' '}
-					<div className={styles.result__item}>Ячменный напиток Millor - Здоровое питание</div>{' '}
-					<div className={styles.result__item}>Ячменный напиток Millor - Здоровое питание</div>{' '}
-					<div className={styles.result__item}>Ячменный напиток Millor - Здоровое питание</div>{' '}
+					<div className={styles.result__item}>Ячменный напиток Millor - Здоровое питание</div>
+					<div className={styles.result__item}>Ячменный напиток Millor - Здоровое питание</div>
+					<div className={styles.result__item}>Ячменный напиток Millor - Здоровое питание</div>
+					<div className={styles.result__item}>Ячменный напиток Millor - Здоровое питание</div>
 					<div className={styles.result__item}>Ячменный напиток Millor - Здоровое питание</div>
 				</div>
 			)}

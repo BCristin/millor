@@ -154,7 +154,7 @@ export const CardCoffe = ({ dicount }) => {
 							</div>
 						</div>
 					</div>
-					<div className={styles.title}>Colombia Supremo</div>{' '}
+					<div className={styles.title}>Colombia Supremo</div>
 					<div className={styles.desc}>Свежеобжаренный кофе - описание товара, вкус, аромат</div>
 				</Link>
 				<div className={styles.card__bottom}>

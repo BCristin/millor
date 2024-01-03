@@ -28,3 +28,14 @@
 	margin: 0px -3px -5px 0;
 	padding: 13px;
 }
+
+@media (max-width: 1350px) {
+	.btn {
+		font-size: 21px;
+
+		max-width: 283px;
+		padding: 15px 39px;
+
+		border-radius: 3.543px;
+	}
+}

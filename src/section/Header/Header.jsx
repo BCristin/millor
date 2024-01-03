@@ -20,11 +20,11 @@ export const Header = ({ setIsOpen }) => {
 							pagination={{
 								clickable: true,
 							}}
-							autoplay={{
-								delay: 2500,
-								disableOnInteraction: true,
-								pauseOnMouseEnter: true,
-							}}
+							// autoplay={{
+							// 	delay: 2500,
+							// 	disableOnInteraction: true,
+							// 	pauseOnMouseEnter: true,
+							// }}
 							modules={[Autoplay, EffectFade, Navigation, Pagination]}
 
 							// slidesPerView={1}
